@@ -1,9 +1,9 @@
 import React from 'react';
 import Home from './components/home';
 import Navbar from './components/navbar';
-import Skills from './components/skils';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact'
+import Tech from './components/tech';
+import Work from './components/work';
+import About from './components/about'
 // export main to seperate component if?
 class App extends React.Component{
   render(){
@@ -11,9 +11,9 @@ class App extends React.Component{
       <div>
         <Navbar />
         <Home />
-        <Skills />
-        <Portfolio />
-        <Contact />
+        <Work />
+        <Tech />
+        <About />
       </div>
     )
   }

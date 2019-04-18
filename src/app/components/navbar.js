@@ -8,7 +8,9 @@ import smoothScroll from 'smoothscroll'
 class Navbar extends React.Component{
   constructor(){
     super();
-
+    this.state = {
+      mobileMenuRendered : false
+    }
     this.handleScroll= this.handleScroll.bind(this)
   }
   componentDidMount(){
@@ -18,48 +20,96 @@ class Navbar extends React.Component{
     window.removeEventListener('scroll', this.handleScroll)
   }
   scrollTo = (where) =>{
-    let portfolio = document.getElementById('portfolio').offsetTop
-    let contact = document.getElementById('contact').offsetTop
-
+    let work = document.getElementById('work').offsetTop
+    let tech = document.getElementById('tech').offsetTop
+    let about = document.getElementById('about').offsetTop
+    
     switch(where){
       case "home":
       return smoothScroll(0)
-      case "skills":
-      return smoothScroll(window.innerHeight)
-      case "portfolio":
-      return smoothScroll(portfolio)
-      case "contact":
-      return smoothScroll(contact)
+      case "tech":
+      return smoothScroll(tech)
+      case "work":
+      return smoothScroll(work)
+      case "about":
+      return smoothScroll(about)
       default:
       return console.log("ERROR");
     }
   }
+
   handleScroll =() =>{
     let height= window.scrollY
-    var background = (height > window.innerHeight/2)? 'rgb(0, 16, 62)'
+    var background = (height > window.innerHeight/2)? 'rgb(255, 255, 255)'
     : 'transparent';
     this.props.dispatch(nav(background))
   }
+
+  // slides mobile menu in and out
   toggleMenu =() =>{
-    let menu = document.getElementById('menu')
-    menu.style.transform? menu.style.transform = "" : menu.style.transform ="none";
+    let mainNavbar = document.getElementById('main_navbar');
+    let hamburgerBars = document.getElementsByClassName('bar');
+
+    if (this.state.mobileMenuRendered === false) {
+
+      this.setState ({
+        mobileMenuRendered: true
+      })
+      
+      mainNavbar.classList.add('animate');
+      hamburgerBars[0].style.backgroundColor = "white"
+      hamburgerBars[1].style.backgroundColor = "white"
+      hamburgerBars[2].style.backgroundColor = "white"
+
+    } else if (this.state.mobileMenuRendered === true) {
+
+      this.setState ({
+        mobileMenuRendered: false
+      })
+
+      mainNavbar.classList.remove('animate');
+      hamburgerBars[0].style.backgroundColor = "black";
+      hamburgerBars[1].style.backgroundColor = "black";
+      hamburgerBars[2].style.backgroundColor = "black";
+
+      return
   }
+
+    // let desktopMenu = document.getElementById('desktopMenu')
+    // desktopMenu.style.trasnform? desktopMenu.style.transform = "" : desktopMenu.style.transform = "none";
+  }
+
   render(){
     return(
       <div style={{background: this.props.nav.nav}} className="nav">
-        <div className="links">
-          <ul id="menu">
-            <li onClick={()=>this.scrollTo('home')}>Home</li>
-            <li onClick={()=>this.scrollTo('skills')}>Skills</li>
-            <li onClick={()=>this.scrollTo('portfolio')}>Portfolio</li>
-            <li onClick={()=>this.scrollTo('contact')}>Contact</li>
+      <div id='main_navbar'>
+        <ul className='side_nav_menu'>
+        {/* <li onClick={()=>this.scrollTo('home')}>Home</li> */}
+          <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li>
+          <li onClick={()=>this.scrollTo('work')}><p>Work</p></li>
+          <li onClick={()=>this.scrollTo('about')}><p>About</p></li>
+            {/* <div className='mobile-icons-container'>
+                <a href='https://github.com/spencej4'  target="_blank" className='link-inline'><img class='icon-inline' id='github'
+                        src='assets/images/github.png'></a>
+
+                <a href='https://jsfiddle.net/user/Redshift_846/fiddles/' target="_blank" className='link-inline'><img class='icon-inline'
+                        id='jsfiddle' src='assets/images/jsfiddle.png'></a>
+            </div> */}
           </ul>
         </div>
-        <div className="burger">
+        <div className="links">
+          <ul id="desktopMenu">
+            <li onClick={()=>this.scrollTo('home')}><p>Home</p></li>
+            <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li>
+            <li onClick={()=>this.scrollTo('work')}><p>Work</p></li>
+            <li onClick={()=>this.scrollTo('about')}><p>About</p></li>
+          </ul>
+        </div>
+        <div className="hamburger_click_me">
           <input onClick={this.toggleMenu} type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
       </div>
     )

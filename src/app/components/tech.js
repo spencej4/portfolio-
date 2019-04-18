@@ -1,14 +1,12 @@
 import React from 'react'
-import './skills.css'
+import './tech.css'
 
-class Skills extends React.Component{
+class Tech extends React.Component{
   render(){
     return(
-      <div className='Skills'>
+      <div id='tech'>
         <div className="skills-overlay"></div>
         <div className="icon-container">
-          <div className="icon"><img src="http://w3widgets.com/responsive-slider/img/css3.png"/></div>
-          <div className="icon"><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" /></div>
           <div className="icon"><img src="https://fiu-assets-2-syitaetz61hl2sa.stackpathdns.com/static/use-media-items/17/16215/full-1052x1052/56702c8b/js.png?resolution=0" className="icon" /></div>
           <div className="icon"><img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-card.png" /></div>
           <div className="icon"><img src="https://www.vectorlogo.zone/logos/jquery/jquery-card.png" /></div>
@@ -24,10 +22,8 @@ class Skills extends React.Component{
           <div className="icon"><img src="https://wordpress.highcharts.com/blog/wp-content/uploads/2017/08/28160952/highcharts_logo.png" /></div>
           <div className="icon"><img src="https://www.vectorlogo.zone/logos/inkscape/inkscape-card.png" /></div>
         </div>
-
-
-      </div>
+      </div> 
     )
   }
 }
-export default Skills
+export default Tech

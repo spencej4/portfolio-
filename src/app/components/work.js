@@ -1,10 +1,10 @@
 import React from 'react'
-import './skills.css'
+import './tech.css'
 
-class Portfolio extends React.Component{
+class Work extends React.Component{
   render(){
     return(
-      <div id="portfolio" className="Portfolio">
+      <div id="work" className="Portfolio">
         <div className="row row1">
           <div id="vote" className="port-item">
             <div className="port-over">
@@ -96,4 +96,4 @@ class Portfolio extends React.Component{
   }
 }
 
-export default Portfolio
+export default Work

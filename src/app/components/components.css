@@ -4,18 +4,21 @@
   margin:0;
   padding: 0;
   background:linear-gradient(90deg, #2B246E, #1f1671) ;
+  font-family: 'News Cycle', sans-serif;
 
 }
 .home{
   margin:auto;
   width:100%;
-  height:98%;
+  height:450px;
   position: relative;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   background:linear-gradient(90deg, #2B246E, #1f1671) ;
-  color:rgb(255, 64, 64);
+  background-image: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ");;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   z-index: 4;
 }
 .home-text, .next{
@@ -26,16 +29,30 @@
   height:120%;
   width:100%;
   z-index: 3;
-  background:linear-gradient(90deg, #2B246E, #1f1671) ;
+  /* background:linear-gradient(90deg, #2B246E, #1f1671) ; */
   transform: skewY(-5deg);
 }
 
-.developer{
-  transform: rotate(-90deg) translate(-50px,-200px);
-  width:30%;
-  margin-left:25%;
-  margin-top:30%;
+.hero-title{
+    font-size: 55px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: white;
 }
+
+.logo-font {
+  font-size: 55px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
 .developer h1{
   font-size: 60px;
   color:#FFF;
@@ -51,7 +68,6 @@
   animation: web-dev 2.5s linear both
 }
 
-/**/
 .changing{
   margin-top:-50px;
   margin-left:150px;
@@ -61,6 +77,7 @@
   position: relative;
 
 }
+
 #str{
   font-size: 45px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -69,6 +86,7 @@
   letter-spacing: .10em; /* Adjust as needed */
   animation: typing 2s 1.5s steps(40, end) both
 }
+
 #perfection{
   position: absolute;
   font-family: 'Abril Fatface', cursive;
@@ -84,20 +102,23 @@
   animation: translate .6s 3s linear both;
 }
 
-
-
-/**/
 .pop-pop{
   margin-top:20px;
   font-size: 16px;
   font-weight: bold;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 100;
+  background-color: transparent;
+
 }
 .home-text, .next{
   margin:auto;
   width:60%;
-  text-align: center;
+  text-align: left;
 }
-/**/
+
 .next{
 	width: 0;
 	height: 0;
@@ -108,6 +129,7 @@
   bottom:-50px;
   transition: .3s ease;
 }
+
 .next:hover{
   cursor: pointer;
   border-top-color: rgb(172, 0, 0);
