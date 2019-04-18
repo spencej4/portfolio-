@@ -8,7 +8,7 @@ body{
   width:100%;
   z-index: 10;
   background:transparent;
-  height: 63px;
+  height: 56px;
   display: flex;
   margin:auto;
   transition:1s ease
@@ -114,8 +114,8 @@ body{
 }
 
 .hamburger_click_me {
-  top: 14px;
-  right: 20px;
+  top: 11px;
+  right: 23px;
   position: absolute;
   display: none;
   z-index: 18;

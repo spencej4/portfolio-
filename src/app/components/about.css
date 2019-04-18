@@ -6,19 +6,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background:linear-gradient(90deg, #2B246E, #1f1671) ;
-  color:rgb(255, 64, 64);
+  background-color: white;;
+  /* color:rgb(255, 64, 64); */
   z-index: 5;
 }
+
 .skew1{
   margin-top: -140px;
   position: absolute;;
   height:80%;
   width:100%;
   z-index: -2;
-  background:linear-gradient(90deg, #2B246E, #1f1671) ;
-  transform: skewY(-5deg);
+  background-color: white; ;
 }
+
 .con-head{
   margin: auto;
   margin-top:0;
@@ -27,13 +28,7 @@
   display: flex;
   flex-direction: row;
 }
-.cube{
-  width:180px;
-  height:180px;
-  background-image: url(https://i.imgur.com/GCNyjJY.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 .con-head h1{
   width:40%;
   margin: auto;
@@ -43,12 +38,14 @@
   color:#4ef1fb;
   font-weight: bold;
 }
+
 .profile{
   width:100px;
   margin:auto;
   margin-left: 0;
   max-width: 200px;
 }
+
 .con-body{
   width:100%;
   margin:auto;
@@ -72,13 +69,16 @@
   color:inherit;
   margin-top:30px;
 }
+
 .a h3{
   margin-top: 0;
 }
+
 .a:hover, a:focus, a:visited{
   text-decoration: none;
   color: inherit;
 }
+
 .con-body a div{
   margin:auto;
   margin-top:0;
@@ -88,12 +88,15 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .form{
   margin:auto;
-  width:80%;
+  width:100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
+
 .area input, .area textarea {
   display: flex;
   width:30%;
@@ -107,12 +110,14 @@
   font-size: 16px;
 
 }
+
 .area textarea{
   margin:auto;
   width:60%;
   resize:none;
   height:150px;
 }
+
 .save{
   margin:10px auto;
   padding:5px 10px;
@@ -126,11 +131,13 @@
   transition: .3s ease;
   outline: none;
 }
+
 .save i{color:#FFF}
 .save:hover, .save:focus{
   border: 3px solid rgb(7, 0, 52);
   padding:2px 7px;
 }
+
 @media screen and (max-width: 425px) {
   .con-head h1{
     font-size: 30px;

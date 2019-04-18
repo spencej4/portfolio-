@@ -7,13 +7,15 @@
   padding-top:100px;
   position: relative;
   background-color: #fff;
-  background-image: url(https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?auto=format&fit=crop&w=1350&q=80);
-  background-size: contain;
+  background-image: url(https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ);
+  background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
 
 }
+
 .skills-overlay{
   margin-top:-100px;
   position: absolute;
@@ -21,9 +23,11 @@
   height:100%;
   background-color:rgba(0, 8, 57, 0.44)
 }
+
 .header{
   margin:auto;
 }
+
 .icon-container{
   padding-top: 50px;
   position: relative;
@@ -34,36 +38,18 @@
   flex-wrap: wrap;
   margin: 30px auto;
 }
+
 .icon{
   width:15%;
   margin:auto;
   height:auto;
   animation: move 5s infinite;
 }
+
 .icon img{
   margin:auto;
   width:80%;
   max-height:200px;
-}
-.icon:hover{
-  animation: wow .3s
-}
-@keyframes wow {
-  0%{transform: rotate(0);}
-  25%{transform: rotate(4deg);}
-  50%{transform: rotate(0deg);}
-  75%{transform: rotate(4deg);}
-  100%{transform: rotate(0deg);}
-}
-@keyframes move {
-  0%{
-    transform: translateY(5px);
-  }
-  50%{
-    transform: translateY(-5px);
-  }
-  100%{transform: translateY(5px)
-  }
 }
 
 /*portfolio*/
@@ -75,6 +61,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .port-item{
   position: relative;
   margin:auto 0;
@@ -92,6 +79,7 @@
   flex-direction: row;
   margin:auto;
 }
+
 .row1 .port-item{
   margin:auto;
   width:50%;
@@ -101,6 +89,7 @@
   margin:auto;
   width:33.33%;
 }
+
 .port-over{
   position: absolute;
   width:100%;
@@ -110,12 +99,14 @@
   transition: 1s ease;
   z-index: -1;
 }
+
 .port-link{
   display: flex;
   justify-content: center;
   margin:auto;
   text-align: center;
 }
+
 .port-link a{
   margin:auto;
   margin-top:20%;
@@ -126,48 +117,59 @@
 #vote{
   background-image: url(https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=1353&q=80);
 }
+
 #simon{
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/99/OriginalSimon.jpg);
 }
+
 #book{
   background-image: url(https://images.unsplash.com/photo-1431608660976-4fe5bcc2112c?auto=format&fit=crop&w=1350&q=80);
   background-position: left;
 
 }
+
 #clock{
   background-image: url(https://images.unsplash.com/photo-1447015237013-0e80b2786ddc?auto=format&fit=crop&w=1350&q=80);
   background-position: left;
 }
+
 #chart{
   background-image:url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1302&q=80);
   background-position: right;
 }
+
 #pin{
   background-image: url(https://s.pinimg.com/images/facebook_share_image.png);
   background-position: right;
 }
+
 #club{
   background-image: url(https://images.unsplash.com/photo-1450044804117-534ccd6e6a3a?auto=format&fit=crop&w=1267&q=80);
 }
 #clock:hover, #book:hover{
   background-position: right;
 }
+
 #chart:hover, #pin:hover{
   background-position: left;
 
 }
+
 .port-item:hover, .port-item:active{
   background-position: bottom;
 }
+
 .port-item:hover .port-over{
   background-color: rgba(0, 0, 0, 0.90);
   transform: none;
   z-index: 3;
 }
+
 .port-item:hover .port-link{
   animation: pop 1s .8s ease both;
 
 }
+
 /*certs*/
 .certC{
   width:100%;
@@ -175,6 +177,7 @@
   display: flex;
   flex-direction: row;
 }
+
 .cert{
   display: flex;
   flex-direction: column;
@@ -186,9 +189,11 @@
   background-position: center;
   position: relative;
 }
+
 #front{
   background-image: url(https://i.imgur.com/ToFZKBd.jpg);
 }
+
 #back{
   background-image: url(https://i.imgur.com/yBKoMVP.jpg)
 }
@@ -202,10 +207,12 @@
   color:#FFF;
   font-family: 'Abril Fatface', cursive;
 }
+
 .text h1{
   font-size: 45px;
   color: rgb(255, 64, 64);
 }
+
 .text p{
   width:70%;
   font-size: 18px;
@@ -213,6 +220,7 @@
   text-align: left;
   margin:auto;
 }
+
 .certC .text a {
   margin:auto;
   position: absolute;
@@ -236,12 +244,14 @@
   .icon{
     width:30%
   }
+  
   .Skills{
     background-repeat: no-repeat;
     background-image: url(https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?auto=format&fit=crop&w=634&q=80);
     background-size: cover;
     background-position: right;
   }
+
   .port-item{
     height:250px;
   }
@@ -249,21 +259,23 @@
   #book, #clock, #chart, #club{
     background-position: top;
   }
+
   #book:hover, #clock:hover, #chart:hover, #club:hover,
    #book:focus, #clock:focus, #chart:focus, #club:focus,
    #book:active, #clock:active, #chart:active, #club:active{
     background-position: bottom;
   }
+
   .row, .certC{
     margin: auto;
     display: flex;
     flex-direction: column;
   }
+
   .row2 .port-item, .row1 .port-item, #front, #back{
     display: flex;
     flex-direction: column;
     margin:auto;
     width:100%;
   }
-
 }

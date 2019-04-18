@@ -53,7 +53,6 @@ class About extends React.Component{
       <div id="about" style={{height:height}} className="home Contact">
         <div className="skew1"></div>
         <div className="con-head">
-          <div className="cube"></div>
           <h1>Contact</h1>
           <img className="profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" />
         </div>

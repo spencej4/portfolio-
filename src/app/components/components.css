@@ -15,9 +15,10 @@
   display: flex;
   justify-content: center;
   background:linear-gradient(90deg, #2B246E, #1f1671) ;
-  background-image: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ");;
+  /* background-image: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ"); */
+  background-image: url("https://images.unsplash.com/photo-1533168461629-51f6f8061c68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center center;
   background-size: cover;
   z-index: 4;
 }
