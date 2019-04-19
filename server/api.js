@@ -18,8 +18,8 @@ router.post('/mail', function(req, res, next){
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: `"from Frend" m.and.reflex@outlook.com`, // sender address
-        to: 'vatroslav.puncer@outlook.com', // list of receivers
+        from: `"from New Friend" m.and.reflex@outlook.com`, // sender address
+        to: 'spencerjack.sj@gmail.com', // list of receivers
         subject: req.body.subject, // Subject line
         // text: req.body.text + req.body.from, // plain text body
         html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` // html body
