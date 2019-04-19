@@ -12,6 +12,7 @@ class Navbar extends React.Component{
       mobileMenuRendered : false
     }
     this.handleScroll= this.handleScroll.bind(this)
+    this.handleMobileLink = this.handleMobileLink.bind(this)
   }
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll)
@@ -51,33 +52,40 @@ class Navbar extends React.Component{
     let hamburgerBars = document.getElementsByClassName('bar');
 
     if (this.state.mobileMenuRendered === false) {
-
       this.setState ({
         mobileMenuRendered: true
       })
-      
       mainNavbar.classList.add('animate');
       hamburgerBars[0].style.backgroundColor = "white"
       hamburgerBars[1].style.backgroundColor = "white"
       hamburgerBars[2].style.backgroundColor = "white"
 
     } else if (this.state.mobileMenuRendered === true) {
-
       this.setState ({
         mobileMenuRendered: false
       })
-
       mainNavbar.classList.remove('animate');
       hamburgerBars[0].style.backgroundColor = "black";
       hamburgerBars[1].style.backgroundColor = "black";
       hamburgerBars[2].style.backgroundColor = "black";
-
       return
+    }
   }
 
-    // let desktopMenu = document.getElementById('desktopMenu')
-    // desktopMenu.style.trasnform? desktopMenu.style.transform = "" : desktopMenu.style.transform = "none";
+  handleMobileLink(param) {
+    // when user clicks on a mobile link
+    // scroll to that part of the page
+    if (param === 'tech') {
+      this.scrollTo('tech');
+    }else if (param === 'work') {
+      this.scrollTo('work');
+    }else if (param === 'about'){
+      this.scrollTo('about');
+    }
+    // and hide the mobile menu
+    this.toggleMenu();
   }
+
 
   render(){
     return(
@@ -85,9 +93,10 @@ class Navbar extends React.Component{
       <div id='main_navbar'>
         <ul className='side_nav_menu'>
         {/* <li onClick={()=>this.scrollTo('home')}>Home</li> */}
-          <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li>
-          <li onClick={()=>this.scrollTo('work')}><p>Work</p></li>
-          <li onClick={()=>this.scrollTo('about')}><p>About</p></li>
+          {/* <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li> */}
+          <li onClick={()=>this.handleMobileLink('tech')}><p>Tech</p></li>
+          <li onClick={()=>this.handleMobileLink('work')}><p>Work</p></li>
+          <li onClick={()=>this.handleMobileLink('about')}><p>About</p></li>
             {/* <div className='mobile-icons-container'>
                 <a href='https://github.com/spencej4'  target="_blank" className='link-inline'><img class='icon-inline' id='github'
                         src='assets/images/github.png'></a>
