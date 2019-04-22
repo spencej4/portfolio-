@@ -21,7 +21,7 @@ class About extends React.Component{
       default:
       return console.log("error")
     }
-    this.props.dispatch(query.queryReset())
+    // this.props.dispatch(query.queryReset())
   }
 
   handleSend = () =>{
