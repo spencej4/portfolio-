@@ -26,7 +26,7 @@ class About extends React.Component{
 
   handleSend = () =>{
     // basic form validation
-    if(this.props.form.from === false || this.props.form.subject === false || this.props.form.text === false){
+    if(this.props.form.from === "" || this.props.form.subject === "" || this.props.form.text === ""){
       this.props.dispatch(query.error(true))
     }else{
       let form = this.props.form

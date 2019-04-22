@@ -36,7 +36,7 @@ router.post('/mail', function(req, res, next){
 });
 
 
-// module.exports = router;
+module.exports = router;
 
 // works:
 // let transporter = nodemailer.createTransport({
