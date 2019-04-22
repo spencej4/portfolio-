@@ -25,6 +25,7 @@ class About extends React.Component{
   }
 
   handleSend = () =>{
+    // basic form validation
     if(this.props.form.from === false || this.props.form.subject === false || this.props.form.text === false){
       this.props.dispatch(query.error(true))
     }else{
@@ -32,7 +33,7 @@ class About extends React.Component{
       console.log("sending");
       
       fetch('/api/mail',{
-        method: 'POST',
+        method: 'post',
         mode: "cors",
         headers: {
           'Accept': 'application/json',
@@ -44,7 +45,7 @@ class About extends React.Component{
           text: form.text
         })
       })
-      this.props.dispatch(query.queryReset())
+      // this.props.dispatch(query.queryReset())
     }
 
   }
