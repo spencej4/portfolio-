@@ -33,11 +33,12 @@ class About extends React.Component{
       console.log("sending");
       
       fetch('/api/mail',{
-        method: 'post',
+        method: 'POST',
         mode: "cors",
         headers: {
           'Accept': 'application/json',
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          // 'Access-Control-Allow-Origin': true
         },
         body: JSON.stringify({
           from: form.from,
@@ -45,6 +46,7 @@ class About extends React.Component{
           text: form.text
         })
       })
+
       // this.props.dispatch(query.queryReset())
     }
 

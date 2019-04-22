@@ -5,78 +5,74 @@ var config = require('./config.js');
 
 const cors = require('cors')
 
-// app.get('/with-cors', cors(), (req, res, next) => {
-//   res.json({ msg: 'WHOAH with CORS it works! 🔝 🎉' })
-// })
+// router.post('/mail', cors(), (req, res, next) =>{
+//   let transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     secure: false, 
+//     port: 25, 
+//     auth: {
+//       user: 'spencerjack.sj@gmail.com',
+//       pass: config.password
+//     },
+//     tls: {
+//       rejectUnauthorized: false
+//     }
 
-router.post('/mail', cors(), function(req, res, next){
-  let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    secure: false, 
-    port: 25, 
-    auth: {
-      user: 'spencerjack.sj@gmail.com',
-      pass: config.password
-    },
-    tls: {
-      rejectUnauthorized: false
-    }
+//   });
 
-  });
-
-  let HelperOptions = {
-    from: '"Spencer Jack <spencerjack.sj@gmail.com',
-    to: 'spencerjack.sj@gmail.com',
-    subject: req.body.subject ,// subject line
-    text: req.body.text + req.body.from, // plain text body
-    html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` // html body
-  }
-
-  transporter.sendMail(HelperOptions, (error, info) => {
-    if (error) {
-      return console.log(error);
-    }
-    console.log("The message was sent!");
-    console.log(info);
-  })
-
-  res.json({msg: res.body});
-});
-
-
-module.exports = router;
-
-// works:
-// let transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   secure: false, 
-//   port: 25, 
-//   auth: {
-//     user: 'spencerjack.sj@gmail.com',
-//     pass: config.password
-//   },
-//   tls: {
-//     rejectUnauthorized: false
+//   let HelperOptions = {
+//     from: '"Spencer Jack <spencerjack.sj@gmail.com',
+//     to: 'spencerjack.sj@gmail.com',
+//     subject: req.body.subject ,// subject line
+//     text: req.body.text + req.body.from, // plain text body
+//     html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` // html body
 //   }
+
+//   transporter.sendMail(HelperOptions, (error, info) => {
+//     if (error) {
+//       return console.log(error);
+//     }
+//     console.log("The message was sent!");
+//     console.log(info);
+//   })
+
+//   res.json({msg: res.body});
 // });
 
 
-// let HelperOptions = {
-//   from: '"Spencer Jack <spencerjack.sj@gmail.com',
-//   to: 'spencerjack.sj@gmail.com',
-//   subject: "hello Wooorld",
-//   text: 'Wow this works!'
-// };
+// module.exports = router;
+
+// works:
+let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  secure: false, 
+  port: 25, 
+  auth: {
+    user: 'spencerjack.sj@gmail.com',
+    pass: config.password
+  },
+  tls: {
+    rejectUnauthorized: false
+  }
+});
 
 
-// transporter.sendMail(HelperOptions, (error, info) => {
-//   if (error) {
-//     return console.log(error);
-//   }
-//   console.log("The message was sent!");
-//   console.log(info);
-// })
+let HelperOptions = {
+  from: '"Spencer Jack <spencerjack.sj@gmail.com',
+  to: 'spencerjack.sj@gmail.com',
+  subject: "Girls",
+  text: 'All the pics...'
+};
+
+
+transporter.sendMail(HelperOptions, (error, info) => {
+  if (error) {
+    return console.log(error);
+  }
+  console.log("The message was sent!");
+  console.log(info);
+})
  
 
 
-// module.exports = router;
+module.exports = router;
