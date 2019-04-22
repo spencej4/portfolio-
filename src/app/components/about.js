@@ -7,7 +7,7 @@ class About extends React.Component{
   componentDidMount(){
     this.props.dispatch(query.queryReset())
   }
-  
+
   handleChange =(e,type)=>{
     let value = e.target.value
     this.props.dispatch(query.error(false))
@@ -21,7 +21,7 @@ class About extends React.Component{
       default:
       return console.log("error")
     }
-    // this.props.dispatch(query.queryReset())
+    this.props.dispatch(query.queryReset())
   }
 
   handleSend = () =>{
@@ -54,16 +54,16 @@ class About extends React.Component{
     return(
       <div id="about" style={{height:height}} className="home Contact">
         <div className="skew1"></div>
-        <div className="con-head">
+        {/* <div className="con-head">
           <h1>Contact</h1>
-          <img className="profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt='temp alt'/>
-        </div>
+          <img className="profile" src="" alt='temp alt'/>
+        </div> */}
         <div className="con-body">
-          <a className="a" target="blank" href="https://github.com/DReflex">
+          <a className="a" target="blank" href="">
             <div></div>
             <h3>GitHub</h3>
           </a>
-          <h4>vatraisreflex@gmail.com || vatroslav.puncer@outlook.com</h4>
+          <h4>Spencerjack.sj@gmail.com</h4>
           <div className="form">
             <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "from")} value={form.from} placeholder="your e-mail: " type="email"/></div>
             <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "subject")} value={form.subject} placeholder="Subject: " type="text"/></div>

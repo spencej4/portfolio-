@@ -114,47 +114,6 @@
   color: #fff;
 }
 
-#vote{
-  background-image: url(https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=1353&q=80);
-}
-
-#simon{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/99/OriginalSimon.jpg);
-}
-
-#book{
-  background-image: url(https://images.unsplash.com/photo-1431608660976-4fe5bcc2112c?auto=format&fit=crop&w=1350&q=80);
-  background-position: left;
-
-}
-
-#clock{
-  background-image: url(https://images.unsplash.com/photo-1447015237013-0e80b2786ddc?auto=format&fit=crop&w=1350&q=80);
-  background-position: left;
-}
-
-#chart{
-  background-image:url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1302&q=80);
-  background-position: right;
-}
-
-#pin{
-  background-image: url(https://s.pinimg.com/images/facebook_share_image.png);
-  background-position: right;
-}
-
-#club{
-  background-image: url(https://images.unsplash.com/photo-1450044804117-534ccd6e6a3a?auto=format&fit=crop&w=1267&q=80);
-}
-#clock:hover, #book:hover{
-  background-position: right;
-}
-
-#chart:hover, #pin:hover{
-  background-position: left;
-
-}
-
 .port-item:hover, .port-item:active{
   background-position: bottom;
 }
@@ -188,14 +147,6 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
-
-#front{
-  background-image: url(https://i.imgur.com/ToFZKBd.jpg);
-}
-
-#back{
-  background-image: url(https://i.imgur.com/yBKoMVP.jpg)
 }
 
 .text{
