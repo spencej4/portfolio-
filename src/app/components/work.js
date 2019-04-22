@@ -9,7 +9,7 @@ class Work extends React.Component{
           <div id="vote" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://fierce-chamber-91384.herokuapp.com/"><h1>Voting App Demo</h1></a>
+                <a target="blank" href="https://fierce-chamber-91384.herokuapp.com/"><h1>Voting App Demo</h1></a>
 
               </div>
             </div>
@@ -18,7 +18,7 @@ class Work extends React.Component{
           <div id="simon" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://codepen.io/DReflex/full/qrBGOZ/"><h1>Simon Game</h1></a>
+                <a target="blank" href="https://codepen.io/DReflex/full/qrBGOZ/"><h1>Simon Game</h1></a>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@ class Work extends React.Component{
           <div id="book" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://book-ish-club.herokuapp.com/"><h1>Book Club</h1></a>
+                <a target="blank" href="https://book-ish-club.herokuapp.com/"><h1>Book Club</h1></a>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ class Work extends React.Component{
           <div id="clock" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://codepen.io/DReflex/full/egxQav/"><h1>Pomodoro Clock</h1></a>
+                <a target="blank" href="https://codepen.io/DReflex/full/egxQav/"><h1>Pomodoro Clock</h1></a>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ class Work extends React.Component{
           <div id="chart" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://stock-market-op.herokuapp.com/"><h1>Chart the Stock Market</h1></a>
+                <a target="blank" href="https://stock-market-op.herokuapp.com/"><h1>Chart the Stock Market</h1></a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ class Work extends React.Component{
           <div id="pin" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://fcc-last.herokuapp.com/"><h1>Pinterest Clone</h1></a>
+                <a target="blank" href="https://fcc-last.herokuapp.com/"><h1>Pinterest Clone</h1></a>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ class Work extends React.Component{
           <div id="club" className="port-item">
             <div className="port-over">
               <div className="port-link">
-                <a target="_blank" href="https://iiinightlifeiii.herokuapp.com/"><h1>Nightlife App</h1></a>
+                <a target="blank" href="https://iiinightlifeiii.herokuapp.com/"><h1>Nightlife App</h1></a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ class Work extends React.Component{
               <p>10 Frontend Projects</p>
               <p>37 Javascript algorithm's</p>
               <p>Working with HTML, CSS, JS, jQuery, Bootstrap</p>
-              <p><a target="_blank" href="https://www.freecodecamp.org/dreflex/front-end-certification">Verify this certification</a></p>
+              <p><a target="blank" href="https://www.freecodecamp.org/dreflex/front-end-certification">Verify this certification</a></p>
             </div>
           </div>
           <div id="back" className="cert">
@@ -85,7 +85,7 @@ class Work extends React.Component{
               <p>5 API Projects</p>
               <p>5 Fullstack Projects</p>
               <p>Working with Git, Node.js, Express, MongoDB, React-Redux</p>
-              <p><a target="_blank" href="https://www.freecodecamp.org/dreflex/back-end-certification">Verify this certification</a></p>
+              <p><a target="blank" href="https://www.freecodecamp.org/dreflex/back-end-certification">Verify this certification</a></p>
             </div>
           </div>
         </div>

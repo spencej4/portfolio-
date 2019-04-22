@@ -116,9 +116,9 @@ class Navbar extends React.Component{
         </div>
         <div className="hamburger_click_me">
           <input onClick={this.toggleMenu} type="checkbox" />
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
       </div>
     )

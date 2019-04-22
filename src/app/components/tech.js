@@ -7,8 +7,8 @@ class Tech extends React.Component{
       <div id='tech'>
         <div className="skills-overlay"></div>
         <div className="icon-container">
-          <div className="icon"><img src="https://fiu-assets-2-syitaetz61hl2sa.stackpathdns.com/static/use-media-items/17/16215/full-1052x1052/56702c8b/js.png?resolution=0" className="icon" /></div>
-          <div className="icon"><img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-card.png" /></div>
+          <div className="icon"><img src="https://fiu-assets-2-syitaetz61hl2sa.stackpathdns.com/static/use-media-items/17/16215/full-1052x1052/56702c8b/js.png?resolution=0" className="icon" alt='some text'/></div>
+          {/* <div className="icon"><img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-card.png" /></div>
           <div className="icon"><img src="https://www.vectorlogo.zone/logos/jquery/jquery-card.png" /></div>
           <div className="icon"><img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" /></div>
           <div className="icon"><img src="http://wilsonfong.me/images/icons/redux-logo.png" /></div>
@@ -20,7 +20,7 @@ class Tech extends React.Component{
           <div className="icon"><img src="https://cdn.worldvectorlogo.com/logos/heroku-1.svg" /></div>
           <div className="icon"><img src="https://www.logicsupply.com/explore/io-hub/wp-content/uploads/2013/07/socket-io-logo.jpg" /></div>
           <div className="icon"><img src="https://wordpress.highcharts.com/blog/wp-content/uploads/2017/08/28160952/highcharts_logo.png" /></div>
-          <div className="icon"><img src="https://www.vectorlogo.zone/logos/inkscape/inkscape-card.png" /></div>
+          <div className="icon"><img src="https://www.vectorlogo.zone/logos/inkscape/inkscape-card.png" /></div> */}
         </div>
       </div> 
     )

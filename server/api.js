@@ -1,42 +1,77 @@
 const express= require('express');
 const nodemailer = require('nodemailer');
 
+const fs = require('fs');
+const path = require('path');
+let config = JSON.parse(fs.readFileSync("config.json"));
+
 const router = express.Router();
 
 router.post('/mail', function(req, res, next){
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    secure: false, 
+    port: 25, 
+    auth: {
+      user: 'spencerjack.sj@gmail.com',
+      pass: config.password
+    },
+    tls: {
+      rejectUnauthorized: false
+    }
+  });
 
+  let HelperOptions = {
+    from: '"Spencer Jack <spencerjack.sj@gmail.com',
+    to: 'spencerjack.sj@gmail.com',
+    subject: req.body.subject ,// subject line
+    text: req.body.text + req.body.from, // plain text body
+    html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` // html body
+  }
 
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-      // create new gmailaccount
-        service: 'hotmail' ,
-        auth: {
-            user: 'm.and.reflex@outlook.com', // generated ethereal user
-            pass: 'TestingPassword'  // generated ethereal password
-        }
-    });
-
-    // setup email data with unicode symbols
-    let mailOptions = {
-        from: `"from New Friend" m.and.reflex@outlook.com`, // sender address
-        to: 'spencerjack.sj@gmail.com', // list of receivers
-        subject: req.body.subject, // Subject line
-        // text: req.body.text + req.body.from, // plain text body
-        html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` // html body
-    };
-
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-            res.end()
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        res.end()
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@blurdybloop.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    })
-
+  transporter.sendMail(HelperOptions, (error, info) => {
+    if (error) {
+      return console.log(error);
+    }
+    console.log("The message was sent!");
+    console.log(info);
+  })
 });
+
+
 module.exports = router;
+
+// works:
+// let transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   secure: false, 
+//   port: 25, 
+//   auth: {
+//     user: 'spencerjack.sj@gmail.com',
+//     pass: config.password
+//   },
+//   tls: {
+//     rejectUnauthorized: false
+//   }
+// });
+
+
+// let HelperOptions = {
+//   from: '"Spencer Jack <spencerjack.sj@gmail.com',
+//   to: 'spencerjack.sj@gmail.com',
+//   subject: "hello Wooorld",
+//   text: 'Wow this works!'
+// };
+
+
+// transporter.sendMail(HelperOptions, (error, info) => {
+//   if (error) {
+//     return console.log(error);
+//   }
+//   console.log("The message was sent!");
+//   console.log(info);
+// })
+ 
+
+
+// module.exports = router;

@@ -20,10 +20,10 @@ class About extends React.Component{
       default:
       return console.log("error")
     }
-    this.props.dispatch(query.queryReset())
+    // this.props.dispatch(query.queryReset())
   }
   handleSend = () =>{
-    if(this.props.form.from == false || this.props.form.subject == false || this.props.form.text == false){
+    if(this.props.form.from === false || this.props.form.subject === false || this.props.form.text === false){
       this.props.dispatch(query.error(true))
     }else{
       let form = this.props.form
@@ -54,10 +54,10 @@ class About extends React.Component{
         <div className="skew1"></div>
         <div className="con-head">
           <h1>Contact</h1>
-          <img className="profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" />
+          <img className="profile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt='temp alt'/>
         </div>
         <div className="con-body">
-          <a className="a" target="_blank" href="https://github.com/DReflex">
+          <a className="a" target="blank" href="https://github.com/DReflex">
             <div></div>
             <h3>GitHub</h3>
           </a>
