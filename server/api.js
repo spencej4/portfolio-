@@ -3,8 +3,13 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 var config = require('./config.js');
 
+const cors = require('cors')
 
-router.post('/mail', function(req, res, next){
+// app.get('/with-cors', cors(), (req, res, next) => {
+//   res.json({ msg: 'WHOAH with CORS it works! 🔝 🎉' })
+// })
+
+router.post('/mail', cors(), function(req, res, next){
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     secure: false, 
@@ -16,6 +21,7 @@ router.post('/mail', function(req, res, next){
     tls: {
       rejectUnauthorized: false
     }
+
   });
 
   let HelperOptions = {
@@ -33,6 +39,8 @@ router.post('/mail', function(req, res, next){
     console.log("The message was sent!");
     console.log(info);
   })
+
+  res.json({msg: res.body});
 });
 
 

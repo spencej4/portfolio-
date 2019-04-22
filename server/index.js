@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 
+
 const app =express();
 app.set('port', (process.env.PORT || 4000));
 
@@ -23,9 +24,9 @@ app.use('/', express.static(path.join(__dirname, '../build')));
 
 
 //testing, uncomment this to go back to normal
-// app.get('/*', function (req, res) {
-//     res.sendFile(path.join(__dirname, '../build/index.html'));
-// });
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 //err
 app.use(function(err, req, res, next){
