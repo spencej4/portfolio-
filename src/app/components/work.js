@@ -24,6 +24,7 @@ class Work extends React.Component{
           </div>
 
         </div>
+        
         <div className="row row2 xscol">
           <div id="book" className="port-item">
             <div className="port-over">
@@ -33,31 +34,6 @@ class Work extends React.Component{
             </div>
           </div>
 
-          <div id="clock" className="port-item">
-            <div className="port-over">
-              <div className="port-link">
-                <a target="blank" href="https://codepen.io/DReflex/full/egxQav/"><h1>Pomodoro Clock</h1></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="chart" className="port-item">
-            <div className="port-over">
-              <div className="port-link">
-                <a target="blank" href="https://stock-market-op.herokuapp.com/"><h1>Chart the Stock Market</h1></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row row1">
-          <div id="pin" className="port-item">
-            <div className="port-over">
-              <div className="port-link">
-                <a target="blank" href="https://fcc-last.herokuapp.com/"><h1>Pinterest Clone</h1></a>
-              </div>
-            </div>
-          </div>
 
           <div id="club" className="port-item">
             <div className="port-over">
@@ -67,6 +43,7 @@ class Work extends React.Component{
             </div>
           </div>
         </div>
+
         <div className="certC">
           <div id="front" className="cert">
             <div className="text">
@@ -78,6 +55,7 @@ class Work extends React.Component{
               <p><a target="blank" href="https://www.freecodecamp.org/dreflex/front-end-certification">Verify this certification</a></p>
             </div>
           </div>
+
           <div id="back" className="cert">
             <div className="text">
               <h1>Back End</h1>

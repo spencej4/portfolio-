@@ -7,6 +7,7 @@ class About extends React.Component{
   componentDidMount(){
     this.props.dispatch(query.queryReset())
   }
+  
   handleChange =(e,type)=>{
     let value = e.target.value
     this.props.dispatch(query.error(false))
@@ -22,6 +23,7 @@ class About extends React.Component{
     }
     // this.props.dispatch(query.queryReset())
   }
+
   handleSend = () =>{
     if(this.props.form.from === false || this.props.form.subject === false || this.props.form.text === false){
       this.props.dispatch(query.error(true))
