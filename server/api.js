@@ -1,14 +1,8 @@
 const express= require('express');
 const nodemailer = require('nodemailer');
-
-const fs = require('fs');
-const path = require('path');
-
-// let config = JSON.parse(fs.readFileSync("config.json"));
+const router = express.Router();
 var config = require('./config.js');
 
-
-const router = express.Router();
 
 router.post('/mail', function(req, res, next){
   let transporter = nodemailer.createTransport({

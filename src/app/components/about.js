@@ -33,7 +33,7 @@ class About extends React.Component{
       
       fetch('/api/mail',{
         method: 'POST',
-        mode: "CORS",
+        mode: "cors",
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
