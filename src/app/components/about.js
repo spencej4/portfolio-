@@ -30,17 +30,19 @@ class About extends React.Component{
     }else{
       let form = this.props.form
       console.log("sending");
+      
       fetch('/api/mail',{
         method: 'POST',
         mode: "CORS",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify({
           from: form.from,
           subject: form.subject,
           text: form.text
-        }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        })
       })
       this.props.dispatch(query.queryReset())
     }
