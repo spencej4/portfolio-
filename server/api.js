@@ -3,7 +3,10 @@ const nodemailer = require('nodemailer');
 
 const fs = require('fs');
 const path = require('path');
-let config = JSON.parse(fs.readFileSync("config.json"));
+
+// let config = JSON.parse(fs.readFileSync("config.json"));
+var config = require('./config.js');
+
 
 const router = express.Router();
 
