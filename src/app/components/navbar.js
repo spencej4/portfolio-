@@ -11,7 +11,7 @@ class Navbar extends React.Component{
     this.state = {
       mobileMenuRendered : false
     }
-    this.handleScroll= this.handleScroll.bind(this)
+    // this.handleScroll= this.handleScroll.bind(this)
     this.handleMobileLink = this.handleMobileLink.bind(this)
   }
   componentDidMount(){
@@ -39,12 +39,12 @@ class Navbar extends React.Component{
     }
   }
 
-  handleScroll =() =>{
-    let height= window.scrollY
-    var background = (height > window.innerHeight/2)? 'rgb(255, 255, 255)'
-    : 'transparent';
-    this.props.dispatch(nav(background))
-  }
+  // handleScroll =() =>{
+  //   let height= window.scrollY
+  //   var background = (height > window.innerHeight/2)? 'rgb(255, 255, 255)'
+  //   : 'transparent';
+  //   this.props.dispatch(nav(background))
+  // }
 
   // slides mobile menu in and out
   toggleMenu =() =>{

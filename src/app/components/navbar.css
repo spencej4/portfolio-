@@ -147,6 +147,10 @@
     transition-timing-function: cubic-bezier(0,1.0,.82,1.0);
   }
 
+  .nav {
+    position: fixed;
+  }
+
   
   .hamburger_click_me {
     display: block;

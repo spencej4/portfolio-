@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville');
-
 .body, html{
   margin:0;
   padding: 0;
-  background:linear-gradient(90deg, #2B246E, #1f1671) ;
   font-family: 'News Cycle', sans-serif;
-
 }
+
 .home{
   margin:auto;
   width:100%;
@@ -20,6 +17,7 @@
   background-size: cover;
   z-index: 4;
 }
+
 .home-text, .next{
   z-index: 4;
 }
@@ -44,12 +42,13 @@
 
 .logo-font {
   font-size: 55px;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: -5px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    color: black;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  color: black;
+  line-height: 51px;
 }
 
 .developer h1{
@@ -97,21 +96,21 @@
   padding:10px;
   border-radius: 5px;
 }
+
 .translate{
   animation: translate .6s 3s linear both;
 }
 
 .pop-pop{
-  margin-top:20px;
+  padding-left: 1px;
   font-size: 16px;
   font-weight: bold;
   font-family: 'News Cycle', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   z-index: 100;
-  background-color: transparent;
-
 }
+
 .home-text, .next{
   margin:auto;
   width:60%;
@@ -194,7 +193,7 @@
 }
 
 
-/* mobile */
+/* ---------------------------------------MOBILE--------------------------------------- */
 @media screen and (max-width: 768px) {
   #str{
     font-size: 22px;
@@ -219,6 +218,8 @@
     z-index: 4;
   }
 }
+
+
 @media screen and (max-width:425px) {
   #perfection{
     font-size: 30px;
