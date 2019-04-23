@@ -70,10 +70,11 @@ class About extends React.Component{
           </a>
           <h4>Spencerjack.sj@gmail.com</h4>
           <div className="form">
-            <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "from")} value={form.from} placeholder="your e-mail: " type="email"/></div>
-            <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "subject")} value={form.subject} placeholder="Subject: " type="text"/></div>
-            <div className="area"><textarea style={{border: error}} onChange={(e)=>this.handleChange(e, "text")} value={form.text} placeholder="Text" type="text"/></div>
-            <button className="save" onClick={this.handleSend}> <i className="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+            <div className='form-title'>Let's Get in Touch!</div>
+            <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "from")} value={form.from} placeholder="email address: " type="email"/></div>
+            <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "subject")} value={form.subject} placeholder="subject: " type="text"/></div>
+            <div className="area"><textarea style={{border: error}} onChange={(e)=>this.handleChange(e, "text")} value={form.text} placeholder="message:" type="text"/></div>
+            <button className="save" onClick={this.handleSend}> <i className="fa fa-paper-plane" aria-hidden="true"></i> SEND</button>
           </div>
 
         </div>

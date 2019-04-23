@@ -8,17 +8,90 @@ class Work extends React.Component{
         <div className='work-item'>
             <div className='card'>
                 <a href='https://guarded-retreat-45215.herokuapp.com//' target="_blank"></a>
-                    <img className='work-item-image' src='assets/images/oxo.png'></img>
+                    <img className='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ'></img>
                     <div className='work-copy'>
                         <p className='work-title'>
-                            OXO - Spencer Jack (Contributor)
+                            OXO 
                         </p>
                         <p className='work-description'>
-                            Dynamic gaming app, utilizing custom back-end database.
+                            OXO is your dynamic gaming app, utilizing custom back-end database. Allowing users to create tournament brackets and participate in real-time game play,
+                            with scores and leaderboards.
+                        </p>
+                        <p className='technologies-used-title'>
+                            Technologies Used
+                        </p>
+                        <p className='technologies-used-text'>
+                            MongoDB JavaScript React
                         </p>
                         <a href='https://github.com/spencej4/unit-4-game' target="_blank" className='github-repo'>Github Repo</a>
                     </div>
-                
+            </div>
+        </div>
+        <div className='work-item'>
+            <div className='card'>
+                <a href='https://guarded-retreat-45215.herokuapp.com//' target="_blank"></a>
+                    {/* <img className='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ'></img> */}
+                    <div className='work-copy '>
+                        <p className='work-title'>
+                            Temp 
+                        </p>
+                        <p className='work-description'>
+                          Butcher try-hard waistcoat distillery. Drinking vinegar chartreuse umami live-edge, tattooed church-key tbh semiotics salvia. Microdosing fixie kitsch hell of semiotics pabst ugh. Butcher you probably haven't heard of them humblebrag pickled meh vaporware.
+                        </p>
+                        <p className='technologies-used-title'>
+                            Technologies Used
+                        </p>
+                        <p className='technologies-used-text'>
+                            MongoDB JavaScript React
+                        </p>
+                        <a href='https://github.com/spencej4/unit-4-game' target="_blank" className='github-repo'>Github Repo</a>
+                    </div>
+                    <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ'></img>
+            </div>
+        </div>
+        <div class='work-item'>
+            <div class='card'>
+                <a href='https://uw-js-capstone.firebaseapp.com/' target="_blank">
+                    <img class='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ'></img>
+                    <div class='work-copy'>
+                        <p class='work-title'>
+                            Squixel
+                        </p>
+                        <p class='work-description'>
+                            Squixel is your new portal to professional grade, Instagram-worthy photographs. Search, and save your favorite
+                            photos to your own user database.
+                        </p>
+                        <p className='technologies-used-title'>
+                            Technologies Used
+                        </p>
+                        <p className='technologies-used-text'>
+                            MongoDB JavaScript React
+                        </p>
+                        <a href='https://github.com/spencej4/Squixel' target="_blank" class='github-repo'>Github Repo</a>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div className='work-item'>
+            <div className='card'>
+                <a href='https://guarded-retreat-45215.herokuapp.com//' target="_blank"></a>
+                    {/* <img className='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ'></img> */}
+                    <div className='work-copy '>
+                        <p className='work-title'>
+                            Temp 
+                        </p>
+                        <p className='work-description'>
+                          Butcher try-hard waistcoat distillery. Drinking vinegar chartreuse umami live-edge, tattooed church-key tbh semiotics salvia. Microdosing fixie kitsch hell of semiotics pabst ugh. Butcher you probably haven't heard of them humblebrag pickled meh vaporware.
+                        </p>
+                        <p className='technologies-used-title'>
+                            Technologies Used
+                        </p>
+                        <p className='technologies-used-text'>
+                            MongoDB JavaScript React
+                        </p>
+                        <a href='https://github.com/spencej4/unit-4-game' target="_blank" className='github-repo'>Github Repo</a>
+                    </div>
+                    <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ'></img>
             </div>
         </div>
       </div>

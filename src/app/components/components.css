@@ -1,7 +1,9 @@
 .body, html{
   margin:0;
   padding: 0;
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'News Cycle', sans-serif !important;
+  color: #242424;
+  line-height: 1.5;
 }
 
 .home{
@@ -47,7 +49,7 @@
   letter-spacing: 2px;
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
-  color: black;
+  color: white;
   line-height: 51px;
 }
 
@@ -66,24 +68,7 @@
   animation: web-dev 2.5s linear both
 }
 
-.changing{
-  margin-top:-50px;
-  margin-left:150px;
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  position: relative;
 
-}
-
-#str{
-  font-size: 45px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: typing 2s 1.5s steps(40, end) both
-}
 
 #perfection{
   position: absolute;
@@ -109,6 +94,7 @@
   font-size: 22px;
   font-weight: 400;
   z-index: 100;
+  color: white;
 }
 
 .home-text, .next{
@@ -205,7 +191,7 @@
     top: 0;
     margin: auto;
     width: 100%;
-    height: 450px;
+    height: 407px;
     position: absolute;
     display: -ms-flexbox;
     display: flex;
