@@ -62,11 +62,13 @@
 .work-item {
   width: 95%;
   /* height: 700px; */
-  height: 91vh;
+  /* height: 91vh; */
+  height: 700px;
   padding-top: 80px;
   margin : 0 auto;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   position: relative;
+  overflow: hidden;
 }
 
 .work-item:nth-of-type(4){
@@ -85,7 +87,7 @@
 }
 
 .reflect {
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+  -webkit-box-reflect: below 2px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 
 .work-copy {
@@ -155,7 +157,8 @@
 
   .work-item {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 650px;
   }
 
   .work-item img {
@@ -166,7 +169,7 @@
   }
 
   .reflect {
-    -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(255, 255, 255, 0.1)));
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(255, 255, 255, 0.1)));
   }
 
   .work-copy {
@@ -183,4 +186,13 @@
   .right {
     float: none;
   }
+
+  .work-description {
+    font-size: 15px;
+  }
+
+  .technologies-used-title {
+    padding-top: 13px;
+  }
+
 }
