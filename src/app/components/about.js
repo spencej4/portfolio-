@@ -57,7 +57,7 @@ class About extends React.Component{
     let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
     return(
       <div id="about" style={{height:height}} className="home Contact">
-        <div className="skew1"></div>
+        {/* <div className="skew1"></div> */}
         {/* <div className="con-head">
           <h1>Contact</h1>
           <img className="profile" src="" alt='temp alt'/>

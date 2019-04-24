@@ -12,14 +12,14 @@
   z-index: 5;
 }
 
-.skew1{
+/* .skew1{
   margin-top: -140px;
   position: absolute;;
   height:80%;
   width:100%;
   z-index: -2;
   background-color: white; ;
-}
+} */
 
 .con-head{
   margin: auto;
@@ -113,7 +113,7 @@
   width: 100%;
   margin: 20px auto;
   /* justify-content: flex-start; */
-  /* outline: none; */
+  outline: none;
   border: none;
   border-radius: 5px;
   padding:10px;
