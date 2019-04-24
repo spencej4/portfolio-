@@ -52,13 +52,11 @@ class About extends React.Component{
   }
 
   render(){
-    // let height = window.innerHeight -100;
     let form = this.props.form;
     let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
     return(
-      // <div id="about" style={{height:height}} className="home Contact">
-      <div id="about" className="home Contact">
-
+      <div id="about" className=" Contact">
+        {/* profile pic and stuff here... */}
         {/* <div className="skew1"></div> */}
         {/* <div className="con-head">
           <h1>Contact</h1>

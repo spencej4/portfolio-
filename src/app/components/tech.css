@@ -144,7 +144,7 @@
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {
   /* temp */
-  #tech {
+  tech {
     display: none;
   }
    /* end temp */

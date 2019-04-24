@@ -10,7 +10,7 @@ class Work extends React.Component{
                 <img className='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
                 <div className='work-copy'>
                     <p className='work-title'>
-                        OXO 
+                        OXO - 1
                     </p>
                     <p className='work-description'>
                         OXO is your dynamic gaming app, utilizing custom back-end database. Allowing users to create tournament brackets and participate in real-time game play,
@@ -32,7 +32,7 @@ class Work extends React.Component{
                     <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
-                            Temp 
+                            Temp - 2
                         </p>
                         <p className='work-description'>
                             Butcher try-hard waistcoat distillery. Drinking vinegar chartreuse umami live-edge, tattooed church-key tbh semiotics salvia. Microdosing fixie kitsch hell of semiotics pabst ugh. Butcher you probably haven't heard of them humblebrag pickled meh vaporware.
@@ -46,7 +46,6 @@ class Work extends React.Component{
                         <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank">Demo</a>
                         <a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github Repo</a>
                     </div>
-                {/* <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img> */}
             </div>
         </div>
         <div class='work-item'>
@@ -54,7 +53,7 @@ class Work extends React.Component{
                     <img class='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
                     <div class='work-copy'>
                         <p class='work-title'>
-                            Squixel
+                            Squixel - 3
                         </p>
                         <p class='work-description'>
                             Squixel is your new portal to professional grade, Instagram-worthy photographs. Search, and save your favorite
@@ -76,7 +75,7 @@ class Work extends React.Component{
                     <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
-                            Temp 
+                            Temp - 4
                         </p>
                         <p className='work-description'>
                             Butcher try-hard waistcoat distillery. Drinking vinegar chartreuse umami live-edge, tattooed church-key tbh semiotics salvia. Microdosing fixie kitsch hell of semiotics pabst ugh. Butcher you probably haven't heard of them humblebrag pickled meh vaporware.
@@ -90,7 +89,6 @@ class Work extends React.Component{
                         <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank">Demo</a>
                         <a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github Repo</a>
                     </div>
-                {/* <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img> */}
             </div>
         </div>
       </div>
