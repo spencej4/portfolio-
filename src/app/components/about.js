@@ -21,7 +21,7 @@ class About extends React.Component{
       default:
       return console.log("error")
     }
-    // this.props.dispatch(query.queryReset())
+    this.props.dispatch(query.queryReset())
   }
 
   handleSend = () =>{
@@ -38,7 +38,6 @@ class About extends React.Component{
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          // 'Access-Control-Allow-Origin': true
         },
         body: JSON.stringify({
           from: form.from,
@@ -47,7 +46,7 @@ class About extends React.Component{
         })
       })
 
-      // this.props.dispatch(query.queryReset())
+      this.props.dispatch(query.queryReset())
     }
 
   }

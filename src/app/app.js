@@ -4,7 +4,7 @@ import Navbar from './components/navbar';
 import Tech from './components/tech';
 import Work from './components/work';
 import About from './components/about'
-// export main to seperate component if?
+
 class App extends React.Component{
   render(){
     return(
