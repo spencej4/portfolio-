@@ -1,5 +1,8 @@
 import React from 'react'
 import './tech.css'
+import  squixel from '../img/squixel.jpeg';
+import oxo from '../img/oxo.jpeg';
+import e4s from '../img/e4s.jpeg';
 
 class Work extends React.Component{
   render(){
@@ -7,7 +10,7 @@ class Work extends React.Component{
       <div id="work" className="Portfolio">
         <div className='work-item'>
                 <div className='card'>
-                <img className='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
+                <img className='work-item-image reflect' src={oxo} alt='portfolio item'></img>
                 <div className='work-copy'>
                     <p className='work-title'>
                         OXO - 1
@@ -29,7 +32,7 @@ class Work extends React.Component{
         </div>
         <div className='work-item'>
                 <div className='card'>
-                    <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
+                    <img className='work-item-image reflect right' src={e4s} alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
                             Temp - 2
@@ -50,7 +53,7 @@ class Work extends React.Component{
         </div>
         <div class='work-item'>
                 <div class='card'>
-                    <img class='work-item-image reflect' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
+                    <img class='work-item-image reflect' src={squixel} alt='portfolio item'></img>
                     <div class='work-copy'>
                         <p class='work-title'>
                             Squixel - 3
@@ -72,7 +75,7 @@ class Work extends React.Component{
           </div>
           <div className='work-item'>
                 <div className='card'>
-                    <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
+                <img class='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
                             Temp - 4

@@ -69,6 +69,10 @@
   position: relative;
 }
 
+.work-item:nth-of-type(4){
+  margin-bottom: 25%;
+}
+
 .work-item img {
   max-width: 60%;
   height: auto; 
@@ -144,10 +148,15 @@
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {
   /* temp */
-  tech {
+  /* tech {
     display: none;
-  }
+  } */
    /* end temp */
+
+  .work-item {
+    position: relative;
+    height: 100vh;
+  }
 
   .work-item img {
     max-width: 100%;
