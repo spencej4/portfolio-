@@ -160,17 +160,3 @@
     display: flex;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  #mobileMenu{margin-left: 30%;}
-}
-@media screen and (max-width: 425px) {
-  #mobileMenu{
-    margin-left: -10px;
-  }
-  #mobileMenu li{
-    padding:10px 10px;
-    font-size: 16px;
-  }
-
-}

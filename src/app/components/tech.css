@@ -24,9 +24,6 @@
   background-color: rgba(223, 231, 251, 0.24);
 }
 
-.header{
-  margin:auto;
-}
 
 .icon-container{
   padding-top: 50px;
@@ -53,11 +50,13 @@
 }
 
 .Portfolio{
-  margin:auto;
   width:100%;
+  margin:auto;
+  clear: both;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* position: relative; */
 }
 
 .work-item {
@@ -75,7 +74,6 @@
   height: auto; 
   display: inline-block;
   position: relative;
-  /* float: left; */
 }
 
 .right {
@@ -143,16 +141,31 @@
   }
 }
 
-@media screen and (max-width: 425px) {
-  .icon{
-    width:30%
-  }
-  
-  .Skills{
-    background-repeat: no-repeat;
-    background-image: url(https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?auto=format&fit=crop&w=634&q=80);
-    background-size: cover;
-    background-position: right;
+/* ---------------------------------------MOBILE--------------------------------------- */
+@media (min-width: 320px) and (max-width: 734px) {
+  .work-item img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    position: relative;
   }
 
+  .reflect {
+    -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(255, 255, 255, 0.1)));
+  }
+
+  .work-copy {
+    /* top: 360px; */
+    width: 95%;
+    height: 300px;
+    /* padding-left: 20px; */
+    display: block;
+    position: relative;
+    word-wrap: break-word;
+    clear: both;
+  }
+
+  .right {
+    float: none;
+  }
 }
