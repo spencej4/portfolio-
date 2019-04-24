@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbar.css';
-import {nav} from '../../actions/index'
+// import {nav} from '../../actions/index'
 import {connect} from 'react-redux';
 import smoothScroll from 'smoothscroll'
 

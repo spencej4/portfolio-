@@ -109,9 +109,9 @@
 
 .area input, .area textarea {
   display: flex;
-  width: 99%;
+  width: 100%;
   margin: 20px auto;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   outline: none;
   border: none;
   border-radius: 5px;
@@ -123,7 +123,7 @@
 
 .area textarea{
   margin-top: 20px;;
-  width: 99%;
+  width: 100%;
   resize: none;
   height: 150px;
 }
@@ -149,24 +149,9 @@
   background-color: rgba(159, 178, 202, 0.8);
 }
 
-@media screen and (max-width: 425px) {
-  .con-head h1{
-    font-size: 30px;
-  }
-  .cube{
-    width:140px;
-    height:140px;
-  }
-  .profile{
-    width:80px;
-  }
-  .con-body a div{
-    width:120px;
-    height:120px;
-  }
-  .area input, .area textarea{
-    width:90%;
-    margin-top: 10px;
-    margin-bottom:10px;
+/* ---------------------------------------MOBILE--------------------------------------- */
+@media (min-width: 320px) and (max-width: 734px) {
+  .form {
+    padding: 10% 2%;
   }
 }
