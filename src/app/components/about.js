@@ -21,7 +21,7 @@ class About extends React.Component{
       default:
       return console.log("error")
     }
-    this.props.dispatch(query.queryReset())
+    // this.props.dispatch(query.queryReset())
   }
 
   handleSend = () =>{
@@ -46,28 +46,30 @@ class About extends React.Component{
         })
       })
 
-      this.props.dispatch(query.queryReset())
+      // this.props.dispatch(query.queryReset())
     }
 
   }
 
   render(){
-    let height = window.innerHeight -100;
+    // let height = window.innerHeight -100;
     let form = this.props.form;
     let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
     return(
-      <div id="about" style={{height:height}} className="home Contact">
+      // <div id="about" style={{height:height}} className="home Contact">
+      <div id="about" className="home Contact">
+
         {/* <div className="skew1"></div> */}
         {/* <div className="con-head">
           <h1>Contact</h1>
           <img className="profile" src="" alt='temp alt'/>
         </div> */}
         <div className="con-body">
-          <a className="a" target="blank" href="">
+          {/* <a className="a" target="blank" href="">
             <div></div>
             <h3>GitHub</h3>
           </a>
-          <h4>Spencerjack.sj@gmail.com</h4>
+          <h4>Spencerjack.sj@gmail.com</h4> */}
           <div className="form">
             <div className='form-title'>Let's Get in Touch!</div>
             <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "from")} value={form.from} placeholder="email address: " type="email"/></div>

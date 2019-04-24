@@ -43,7 +43,7 @@ class Work extends React.Component{
                         <p className='technologies-used-text'>
                             MongoDB JavaScript React
                         </p>
-                        <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank"></a>
+                        <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank">Demo</a>
                         <a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github Repo</a>
                     </div>
                 {/* <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img> */}
@@ -87,7 +87,7 @@ class Work extends React.Component{
                         <p className='technologies-used-text'>
                             MongoDB JavaScript React
                         </p>
-                        <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank"></a>
+                        <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank">Demo</a>
                         <a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github Repo</a>
                     </div>
                 {/* <img className='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img> */}

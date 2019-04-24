@@ -155,6 +155,11 @@
 
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {
+  /* temp  */
+  #about {
+    margin-top: 0;
+  }
+  /* end temp */
   .form {
     padding: 10% 2%;
   }
