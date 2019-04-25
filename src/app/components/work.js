@@ -106,7 +106,7 @@ class Work extends React.Component{
                             JavaScript HTML CSS Lightspeed
                         </p>
                         <div className='cta-container'>
-                            <div className='cta'><a href='https://spencej4.github.io/unit-4-game/' target="blank">Demo</a></div>
+                            <div className='cta'><a href='https://spencej4.github.io/Celestial-Battles/' target="blank">Demo</a></div>
                         </div>
                         <div className='cta-container'>
                             <div className='cta'><a href='https://github.com/spencej4/Celestial-Battles' target="blank" className='github-repo'>Github</a></div>
