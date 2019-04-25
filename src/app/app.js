@@ -11,8 +11,9 @@ class App extends React.Component{
       <div>
         <Navbar />
         <Home />
-        <Work />
         <Tech />
+        <Work />
+        {/* <Tech /> */}
         <About />
       </div>
     )
