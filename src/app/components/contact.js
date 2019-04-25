@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import * as query from '../../actions/index'
-import './about.css';
+import './contact.css';
 
-class About extends React.Component{
+class Contact extends React.Component{
   componentDidMount(){
     this.props.dispatch(query.queryReset())
   }
@@ -55,7 +55,7 @@ class About extends React.Component{
     let form = this.props.form;
     let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
     return(
-      <div id="about" className=" Contact">
+      <div id="contact" className=" Contact">
         {/* profile pic and stuff here... */}
         {/* <div className="skew1"></div> */}
         {/* <div className="con-head">
@@ -88,6 +88,6 @@ const store = (store) =>{
     state: store.State
   }
 }
-About = connect(store)(About)
+Contact = connect(store)(Contact)
 
-export default About
+export default Contact

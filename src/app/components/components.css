@@ -9,7 +9,7 @@ import
 }
 
 .home{
-  margin:auto;
+  margin-top: 56px;
   width:100%;
   height:450px;
   position: relative;;
@@ -190,7 +190,7 @@ import
   }
 
   .home {
-    margin: auto;
+    margin-top: 0px;
     width: 100%;
     height: 407px;
     display: -ms-flexbox;

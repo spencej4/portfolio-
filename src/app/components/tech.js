@@ -13,8 +13,8 @@ class Tech extends React.Component{
           <div className="icon">Javascript</div>
           <div className="icon">MySQL</div>
           <div className="icon">MongoDB</div>
-          <div className="icon">HTML</div>
-          <div className="icon">CSS</div>
+          <div className="icon">HTML5</div>
+          <div className="icon">CSS3</div>
           <div className="icon">JQuery</div>
           </div>
       </div> 

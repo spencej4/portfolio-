@@ -26,9 +26,23 @@ class Work extends React.Component{
                     <p className='technologies-used-title'>
                         Technologies Used
                     </p>
-                    <p className='technologies-used-text'>
-                        MongoDB JavaScript React NodeJS Express
-                    </p>
+                    <div className='tech-container'>
+                        <p className='technologies-used-text'>
+                            MongoDB   
+                        </p>
+                        <p className='technologies-used-text'>
+                            React  
+                        </p>
+                        <p className='technologies-used-text'>
+                            NodeJS  
+                        </p>
+                        <p className='technologies-used-text'>
+                            Express
+                        </p>
+                        <p className='technologies-used-text'>
+                            JavaScript
+                        </p>
+                    </div>
                     <div className='cta-container'>
                         <div className='cta'><a href='https://guarded-retreat-45215.herokuapp.com/' target="blank">Demo</a></div>
                     </div>
@@ -51,9 +65,20 @@ class Work extends React.Component{
                         <p className='technologies-used-title'>
                             Technologies Used
                         </p>
-                        <p className='technologies-used-text'>
-                            HTML CSS JavaScript JQuery
-                        </p>
+                        <div className='tech-container'>
+                            <p className='technologies-used-text'>
+                                HTML5   
+                            </p>
+                            <p className='technologies-used-text'>
+                                CSS3   
+                            </p>
+                            <p className='technologies-used-text'>
+                                JavaScript   
+                            </p>
+                            <p className='technologies-used-text'>
+                                JQuery
+                            </p>
+                        </div>
                         <div className='cta-container'>
                             <div className='cta'><a href='https://spencej4.github.io/E_4S/' target="blank">Demo</a></div>
                         </div>
@@ -63,23 +88,35 @@ class Work extends React.Component{
                     </div>
             </div>
         </div>
-        <div class='work-item'>
-                <div class='card'>
-                    <img class='work-item-image reflect' src={squixel} alt='portfolio item'></img>
-                    <div class='work-copy'>
-                        <p class='work-title'>
+        <div className='work-item'>
+                <div className='card'>
+                    <img className='work-item-image reflect' src={squixel} alt='portfolio item'></img>
+                    <div className='work-copy'>
+                        <p className='work-title'>
                             Squixel 
                         </p>
-                        <p class='work-description'>
+                        <p className='work-description'>
                             Squixel is your new portal to professional grade, Instagram-worthy photographs. Search, and save your favorite
                             photos to your own user database.
                         </p>
+                        
                         <p className='technologies-used-title'>
                             Technologies Used
                         </p>
-                        <p className='technologies-used-text'>
-                            JavaScript React NodeJS Express (updates)
-                        </p>
+                        <div className='tech-container'>
+                            <p className='technologies-used-text'>
+                                NodeJS   
+                            </p>
+                            <p className='technologies-used-text'>
+                                Express  
+                            </p>
+                            <p className='technologies-used-text'>
+                                React  
+                            </p>
+                            <p className='technologies-used-text'>
+                                JavaScript
+                            </p>
+                        </div>
                         <div className='cta-container'>
                             <div className='cta'><a href='https://uw-js-capstone.firebaseapp.com/' target="blank">Demo</a></div>
                         </div>
@@ -91,7 +128,7 @@ class Work extends React.Component{
           </div>
           <div className='work-item'>
                 <div className='card'>
-                <img class='work-item-image reflect right' src={celestial_battles} alt='portfolio item'></img>
+                <img className='work-item-image reflect right' src={celestial_battles} alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
                             Celestial Battles
@@ -102,9 +139,20 @@ class Work extends React.Component{
                         <p className='technologies-used-title'>
                             Technologies Used
                         </p>
-                        <p className='technologies-used-text'>
-                            JavaScript HTML CSS Lightspeed
-                        </p>
+                        <div className='tech-container'>
+                            <p className='technologies-used-text'>
+                                JavaScript   
+                            </p>
+                            <p className='technologies-used-text'>
+                                HTML5  
+                            </p>
+                            <p className='technologies-used-text'>
+                                CSS3  
+                            </p>
+                            <p className='technologies-used-text'>
+                                Lightspeed
+                            </p>
+                        </div>
                         <div className='cta-container'>
                             <div className='cta'><a href='https://spencej4.github.io/Celestial-Battles/' target="blank">Demo</a></div>
                         </div>

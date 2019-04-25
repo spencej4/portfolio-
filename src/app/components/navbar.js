@@ -23,7 +23,7 @@ class Navbar extends React.Component{
   scrollTo = (where) =>{
     let work = document.getElementById('work').offsetTop
     let tech = document.getElementById('tech').offsetTop
-    let about = document.getElementById('about').offsetTop
+    let contact = document.getElementById('contact').offsetTop
     
     switch(where){
       // case "home":
@@ -32,8 +32,8 @@ class Navbar extends React.Component{
       return smoothScroll(tech)
       case "work":
       return smoothScroll(work)
-      case "about":
-      return smoothScroll(about)
+      case "contact":
+      return smoothScroll(contact)
       default:
       return console.log("ERROR");
     }
@@ -79,8 +79,8 @@ class Navbar extends React.Component{
       this.scrollTo('tech');
     }else if (param === 'work') {
       this.scrollTo('work');
-    }else if (param === 'about'){
-      this.scrollTo('about');
+    }else if (param === 'contact'){
+      this.scrollTo('contact');
     }
     // and hide the mobile menu
     this.toggleMenu();
@@ -89,14 +89,14 @@ class Navbar extends React.Component{
 
   render(){
     return(
-      <div style={{background: this.props.nav.nav}} className="nav">
+      <div  className="nav">
       <div id='main_navbar'>
         <ul className='side_nav_menu'>
         {/* <li onClick={()=>this.scrollTo('home')}>Home</li> */}
           {/* <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li> */}
           <li onClick={()=>this.handleMobileLink('tech')}><p>Tech</p></li>
           <li onClick={()=>this.handleMobileLink('work')}><p>Work</p></li>
-          <li onClick={()=>this.handleMobileLink('about')}><p>About</p></li>
+          <li onClick={()=>this.handleMobileLink('contact')}><p>Contact</p></li>
             {/* <div className='mobile-icons-container'>
                 <a href='https://github.com/spencej4'  target="_blank" className='link-inline'><img class='icon-inline' id='github'
                         src='assets/images/github.png'></a>
@@ -111,7 +111,7 @@ class Navbar extends React.Component{
             {/* <li onClick={()=>this.scrollTo('home')}><p>Home</p></li> */}
             <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li>
             <li onClick={()=>this.scrollTo('work')}><p>Work</p></li>
-            <li onClick={()=>this.scrollTo('about')}><p>About</p></li>
+            <li onClick={()=>this.scrollTo('contact')}><p>Contact</p></li>
           </ul>
         </div>
         <div className="hamburger_click_me">

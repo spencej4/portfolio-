@@ -1,13 +1,16 @@
 .nav{
-  position: relative;
+  position: fixed;
   top:0;
   width:100%;
   z-index: 10;
-  background:transparent;
+  background-color: white;
   height: 56px;
   display: flex;
   margin:auto;
-  transition:1s ease
+  transition:1s ease;
+    -webkit-box-shadow: 0px 10px 47px -23px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 10px 47px -23px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 47px -23px rgba(0,0,0,0.2);
 }
 
 #desktopMenu {
@@ -142,6 +145,8 @@
 
   .nav {
     position: fixed;
+    background: transparent;
+    box-shadow: none;
   }
 
   
