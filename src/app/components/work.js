@@ -6,6 +6,7 @@ import './tech.css'
 import  squixel from '../img/squixel.jpeg';
 import oxo from '../img/oxo.jpeg';
 import e4s from '../img/e4s.jpeg';
+import celestial_battles from '../img/celestial-battles.jpg';
 
 class Work extends React.Component{
   render(){
@@ -90,7 +91,7 @@ class Work extends React.Component{
           </div>
           <div className='work-item'>
                 <div className='card'>
-                <img class='work-item-image reflect right' src='https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ' alt='portfolio item'></img>
+                <img class='work-item-image reflect right' src={celestial_battles} alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
                             Celestial Battles
