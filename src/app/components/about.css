@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:100');
 
 .Contact{
-  margin-top:110px;
+  /* margin-top:110px; */
   width:100%;
   height:98%;
   position: relative;
@@ -25,7 +25,7 @@
   width:100%;
   margin:auto;
   margin-top:0;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .con-body h4{
@@ -132,7 +132,7 @@
   /* temp  */
   #about {
     height: 100%;
-    margin-top: 400px;
+    /* margin-top: 400px; */
     position: relative;
   }
 

@@ -34,15 +34,12 @@
   text-transform: uppercase;
 }
 
-
 .links {
   width: 90%;
   margin: auto;
   height:50px;
   margin-right:50px;
 }
-
-
 
 .main_navbar {
   display: none;
@@ -91,11 +88,8 @@
   color: #ffffff;
   width: 100%;
   cursor: pointer;
-
-  /* new */
   background-color: black;
   opacity: 0.85;
-  /* end new */
 }
 
 .side_nav_menu li:hover {
@@ -134,7 +128,6 @@
     margin: 8px auto 0 auto;
     transition: 0.4s;
 }
-
 
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {

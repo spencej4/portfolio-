@@ -26,8 +26,8 @@ class Navbar extends React.Component{
     let about = document.getElementById('about').offsetTop
     
     switch(where){
-      case "home":
-      return smoothScroll(0)
+      // case "home":
+      // return smoothScroll(0)
       case "tech":
       return smoothScroll(tech)
       case "work":
@@ -108,7 +108,7 @@ class Navbar extends React.Component{
         </div>
         <div className="links">
           <ul id="desktopMenu">
-            <li onClick={()=>this.scrollTo('home')}><p>Home</p></li>
+            {/* <li onClick={()=>this.scrollTo('home')}><p>Home</p></li> */}
             <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li>
             <li onClick={()=>this.scrollTo('work')}><p>Work</p></li>
             <li onClick={()=>this.scrollTo('about')}><p>About</p></li>
@@ -124,10 +124,12 @@ class Navbar extends React.Component{
     )
   }
 }
+
 const state = (state) =>{
   return{
     nav: state.State
   }
 }
 Navbar = connect(state)(Navbar)
+
 export default Navbar

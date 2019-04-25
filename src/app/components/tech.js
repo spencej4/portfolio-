@@ -5,9 +5,17 @@ class Tech extends React.Component{
   render(){
     return(
       <div id='tech'>
-        <div className="skills-overlay"></div>
+      <div className='tech-title'>Technologies</div>
         <div className="icon-container">
-          <div className="icon"><img src="https://fiu-assets-2-syitaetz61hl2sa.stackpathdns.com/static/use-media-items/17/16215/full-1052x1052/56702c8b/js.png?resolution=0" className="icon" alt='some text'/></div>
+          <div className="icon">MongoDB</div>
+          <div className="icon">Mongoose</div>
+          <div className="icon">React</div>
+          <div className="icon">NodeJS</div>
+          <div className="icon">Express</div>
+          <div className="icon">Javascript</div>
+          <div className="icon">MySQL</div>
+          <div className="icon">HTML</div>
+          <div className="icon">CSS</div>
         </div>
       </div> 
     )

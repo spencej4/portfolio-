@@ -28,8 +28,12 @@ class Work extends React.Component{
                     <p className='technologies-used-text'>
                         MongoDB JavaScript React
                     </p>
-                    <a href='https://guarded-retreat-45215.herokuapp.com//' target="blank">Demo</a>
-                    <a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github Repo</a>
+                    <div className='cta-container'>
+                        <div className='cta'><a href='https://guarded-retreat-45215.herokuapp.com//' target="blank">Demo</a></div>
+                    </div>
+                    <div className='cta-container'>
+                        <div className='cta'><a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github</a></div>
+                    </div>
                 </div>
                 </div>
         </div>
@@ -84,7 +88,7 @@ class Work extends React.Component{
                             Temp - 4
                         </p>
                         <p className='work-description'>
-                            Butcher try-hard waistcoat distillery. Drinking vinegar chartreuse umami live-edge, tattooed church-key tbh semiotics salvia. Microdosing fixie kitsch hell of semiotics pabst ugh. Butcher you probably haven't heard of them humblebrag pickled meh vaporware.
+                            Butcher try-hard waistcoat distillery. Drinking vinegar chartreuse umami live-edge, tattooed church-key tbh semiotics salvia. Microdosing fixie 
                         </p>
                         <p className='technologies-used-title'>
                             Technologies Used
