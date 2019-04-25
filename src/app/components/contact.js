@@ -4,6 +4,13 @@ import * as query from '../../actions/index'
 import './contact.css';
 
 class Contact extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      displayForm: true
+    }
+  }
+
   componentDidMount(){
     this.props.dispatch(query.queryReset())
   }
@@ -21,10 +28,9 @@ class Contact extends React.Component{
       default:
       return console.log("error")
     }
-    // this.props.dispatch(query.queryReset())
   }
 
-  handleSend = () =>{
+  handleSend = () => {
     // basic form validation
     if(this.props.form.from === "" || this.props.form.subject === "" || this.props.form.text === ""){
       this.props.dispatch(query.error(true))
@@ -43,45 +49,43 @@ class Contact extends React.Component{
           from: form.from,
           subject: form.subject,
           text: form.text
-        })
-      })
-
-      // this.props.dispatch(query.queryReset())
-    }
-
+        }) 
+      }).then(function(){
+        this.setState({ displayForm: false });
+      }.bind(this));
+      }
   }
+
+  
 
   render(){
     let form = this.props.form;
     let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
     return(
       <div id="contact" className=" Contact">
-        {/* profile pic and stuff here... */}
-        {/* <div className="skew1"></div> */}
-        {/* <div className="con-head">
-          <h1>Contact</h1>
-          <img className="profile" src="" alt='temp alt'/>
-        </div> */}
         <div className="con-body">
-          {/* <a className="a" target="blank" href="">
-            <div></div>
-            <h3>GitHub</h3>
-          </a>
-          <h4>Spencerjack.sj@gmail.com</h4> */}
-          <div className="form">
-            <div className='form-title'>Let's Get in Touch!</div>
-            <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "from")} value={form.from} placeholder="email address: " type="email"/></div>
-            <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "subject")} value={form.subject} placeholder="subject: " type="text"/></div>
-            <div className="area"><textarea style={{border: error}} onChange={(e)=>this.handleChange(e, "text")} value={form.text} placeholder="message:" type="text"/></div>
-            <button className="save" onClick={this.handleSend}> <i className="fa fa-paper-plane" aria-hidden="true"></i> SEND</button>
-          </div>
-
+            {this.state.displayForm ? (
+              <div className="form">
+                <div className='form-title'>Let's Get in Touch!</div>
+                <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "from")} value={form.from} placeholder="email address: " type="email"/></div>
+                <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "subject")} value={form.subject} placeholder="subject: " type="text"/></div>
+                <div className="area"><textarea style={{border: error}} onChange={(e)=>this.handleChange(e, "text")} value={form.text} placeholder="message:" type="text"/></div>
+                <button className="save" onClick={this.handleSend}> <i className="fa fa-paper-plane" aria-hidden="true"></i> SEND</button>
+              </div>
+            ) : (
+              <div className='thank-you-message'>
+                <div className='message-title'>Thanks!</div>
+                <div className='message-container'>
+                  <div className='message'>Your email has been sent.</div>
+                </div>
+              </div>
+            )}
         </div>
-
       </div>
     )
   }
 }
+
 const store = (store) =>{
   return{
     form:store.form,
