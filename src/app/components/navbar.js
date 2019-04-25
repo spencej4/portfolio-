@@ -21,30 +21,27 @@ class Navbar extends React.Component{
     window.removeEventListener('scroll', this.handleScroll)
   }
   scrollTo = (where) =>{
-    let work = document.getElementById('work').offsetTop
     let tech = document.getElementById('tech').offsetTop
+    let work = document.getElementById('work').offsetTop
+    let about = document.getElementById('about').offsetTop
     let contact = document.getElementById('contact').offsetTop
+
     
     switch(where){
       // case "home":
       // return smoothScroll(0)
       case "tech":
-      return smoothScroll(tech)
+        return smoothScroll(tech)
       case "work":
-      return smoothScroll(work)
+        return smoothScroll(work)
+      case "about":
+        return smoothScroll(about)
       case "contact":
-      return smoothScroll(contact)
+        return smoothScroll(contact)
       default:
-      return console.log("ERROR");
+        return console.log("ERROR");
     }
   }
-
-  // handleScroll =() =>{
-  //   let height= window.scrollY
-  //   var background = (height > window.innerHeight/2)? 'rgb(255, 255, 255)'
-  //   : 'transparent';
-  //   this.props.dispatch(nav(background))
-  // }
 
   // slides mobile menu in and out
   toggleMenu =() =>{
@@ -79,6 +76,8 @@ class Navbar extends React.Component{
       this.scrollTo('tech');
     }else if (param === 'work') {
       this.scrollTo('work');
+    }else if (param === 'about') {
+      this.scrollTo('about');
     }else if (param === 'contact'){
       this.scrollTo('contact');
     }
@@ -96,14 +95,8 @@ class Navbar extends React.Component{
           {/* <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li> */}
           <li onClick={()=>this.handleMobileLink('tech')}><p>Tech</p></li>
           <li onClick={()=>this.handleMobileLink('work')}><p>Work</p></li>
+          <li onClick={()=>this.handleMobileLink('about')}><p>About</p></li>
           <li onClick={()=>this.handleMobileLink('contact')}><p>Contact</p></li>
-            {/* <div className='mobile-icons-container'>
-                <a href='https://github.com/spencej4'  target="_blank" className='link-inline'><img class='icon-inline' id='github'
-                        src='assets/images/github.png'></a>
-
-                <a href='https://jsfiddle.net/user/Redshift_846/fiddles/' target="_blank" className='link-inline'><img class='icon-inline'
-                        id='jsfiddle' src='assets/images/jsfiddle.png'></a>
-            </div> */}
           </ul>
         </div>
         <div className="links">
@@ -111,6 +104,7 @@ class Navbar extends React.Component{
             {/* <li onClick={()=>this.scrollTo('home')}><p>Home</p></li> */}
             <li onClick={()=>this.scrollTo('tech')}><p>Tech</p></li>
             <li onClick={()=>this.scrollTo('work')}><p>Work</p></li>
+            <li onClick={()=>this.scrollTo('about')}><p>About</p></li>
             <li onClick={()=>this.scrollTo('contact')}><p>Contact</p></li>
           </ul>
         </div>

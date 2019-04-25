@@ -1,8 +1,5 @@
 import React from 'react'
 import './tech.css'
-
-// this loads too slowly
-// switch to htmls links to imgur instead
 import  squixel from '../img/squixel.jpeg';
 import oxo from '../img/oxo.jpeg';
 import e4s from '../img/e4s.jpeg';
