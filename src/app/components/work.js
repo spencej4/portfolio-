@@ -6,7 +6,7 @@ import './tech.css'
 import  squixel from '../img/squixel.jpeg';
 import oxo from '../img/oxo.jpeg';
 import e4s from '../img/e4s.jpeg';
-import celestial_battles from '../img/celestial-battles.jpg';
+import celestial_battles from '../img/celestial-battles.JPG';
 
 class Work extends React.Component{
   render(){
