@@ -72,6 +72,7 @@
   margin : 0 auto;
   position: relative;
   overflow: hidden;
+  background-color: rgba(248, 246, 247, 0.3);
 }
 
 .work-item img {
