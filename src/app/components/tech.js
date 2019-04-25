@@ -5,10 +5,9 @@ class Tech extends React.Component{
   render(){
     return(
       <div id='tech'>
-      <div className='tech-title'>Technologies</div>
+        <div className='tech-title'>Technologies</div>
         <div className="icon-container">
           <div className="icon">MongoDB</div>
-          <div className="icon">Mongoose</div>
           <div className="icon">React</div>
           <div className="icon">NodeJS</div>
           <div className="icon">Express</div>
@@ -16,7 +15,8 @@ class Tech extends React.Component{
           <div className="icon">MySQL</div>
           <div className="icon">HTML</div>
           <div className="icon">CSS</div>
-        </div>
+          <div className="icon">JQuery</div>
+          </div>
       </div> 
     )
   }
