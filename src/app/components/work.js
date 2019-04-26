@@ -44,7 +44,7 @@ class Work extends React.Component{
                         <div className='cta'><a href='https://guarded-retreat-45215.herokuapp.com/' target="blank">Demo</a></div>
                     </div>
                     <div className='cta-container'>
-                        <div className='cta'><a href='https://github.com/spencej4/unit-4-game' target="blank" className='github-repo'>Github</a></div>
+                        <div className='cta'><a href='https://github.com/spencej4/OXO' target="blank" className='github-repo'>Github</a></div>
                     </div>
                 </div>
                 </div>

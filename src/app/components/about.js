@@ -16,7 +16,7 @@ class About extends React.Component {
                             complex aeronautics systems, troubleshooting and creating resolutions to problems. I develop thoughtful, efficient apps with the user experience in mind.</p>  
                         <a href='https://github.com/spencej4'  target="blank" className='link-inline'><img  id='github' src={github} alt='github link'></img></a>
                         <a href='https://www.linkedin.com/in/spencej4/'  target="blank" className='link-inline'><img  id='linkedin' src={linkedin} alt='linkedin link'></img></a>
-                        <a href="link/to/your/download/file" className='link-inline' download>Resume Download</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1a_-v2kUvDAmk1ijTdIm4ue1YRsYOO5gO" className='link-inline' download>Resume Download</a>
                     </div>  
                 </div>
             </div>
