@@ -2,13 +2,14 @@ import React from 'react'
 import './about.css';
 import github from '../img/logo-github.png';
 import linkedin from '../img/logo-linkedin.png';
+import spence from '../img/spence.jpeg';
 
 class About extends React.Component {
     render(){
         return(
             <div id='about'>
                 <div className='about-container'>
-                    <img className='spence' src='http://via.placeholder.com/250x250' alt='placeholder'></img>
+                    <img className='spence' src={spence} alt='profile'></img>
                     <div className='about-text'>
                         <div className='about-title'><p>Nice to meet you.</p></div>
                         <p>Forward thinking web developer with an eye for design and clean, minimalist UI's. I'm focused and engergized within fast paced environments.

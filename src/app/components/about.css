@@ -11,6 +11,8 @@
 
 .spence {
     float: left;
+    width: 250px;
+    height: 250px;
 }
 
 .about-title {
@@ -50,6 +52,8 @@
     }
 
    .spence {
+       width: 99%;
+       height: auto;
        float: none;
        margin-bottom: 5%;
    } 
