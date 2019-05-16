@@ -113,12 +113,21 @@ class Work extends React.Component{
                             <p className='technologies-used-text'>
                                 JavaScript
                             </p>
+                            <p className='technologies-used-text'>
+                                MongoDB
+                            </p>
+                            <p className='technologies-used-text'>
+                                Mongoose
+                            </p>
+                            <p className='technologies-used-text'>
+                                HTML5/ CSS3
+                            </p>
                         </div>
                         <div className='cta-container'>
-                            <div className='cta'><a href='https://uw-js-capstone.firebaseapp.com/' target="blank">Demo</a></div>
+                            <div className='cta'><a href='https://squixel.herokuapp.com/' target="blank">Demo</a></div>
                         </div>
                         <div className='cta-container'>
-                            <div className='cta'><a href='https://github.com/spencej4/Squixel' target="blank" className='github-repo'>Github</a></div>
+                            <div className='cta'><a href='https://github.com/spencej4/squixel_3.0' target="blank" className='github-repo'>Github</a></div>
                         </div>
                     </div>
                 </div>

@@ -41,38 +41,3 @@ router.post('/mail', cors(), (req, res, next) =>{
 
 
 module.exports = router;
-
-// works:
-// let transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   secure: false, 
-//   port: 25, 
-//   auth: {
-//     user: 'spencerjack.sj@gmail.com',
-//     pass: config.password
-//   },
-//   tls: {
-//     rejectUnauthorized: false
-//   }
-// });
-
-
-// let HelperOptions = {
-//   from: '"Spencer Jack <spencerjack.sj@gmail.com',
-//   to: 'spencerjack.sj@gmail.com',
-//   subject: "Girls",
-//   text: 'All the pics...'
-// };
-
-
-// transporter.sendMail(HelperOptions, (error, info) => {
-//   if (error) {
-//     return console.log(error);
-//   }
-//   console.log("The message was sent!");
-//   console.log(info);
-// })
- 
-
-
-// module.exports = router;
