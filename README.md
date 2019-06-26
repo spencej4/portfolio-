@@ -1,7 +1,11 @@
-Running App Locally:
+## Author
 
-* from within parent directory folder: 
+* Spencer Jack 2019
+
+## Running App Locally:
+
+* From within parent directory folder: 
   ** npm run dev
-* from within server folder:
+* From within server folder:
   ** nodemon index.js
 

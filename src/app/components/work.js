@@ -2,7 +2,7 @@ import React from 'react'
 import './tech.css'
 import  squixel from '../img/squixel.jpeg';
 import oxo from '../img/oxo.jpeg';
-import e4s from '../img/e4s.jpeg';
+import amber_smith from '../img/amber-smith.JPG';
 import celestial_battles from '../img/celestial-battles.JPG';
 
 class Work extends React.Component{
@@ -51,36 +51,47 @@ class Work extends React.Component{
         </div>
         <div className='work-item'>
                 <div className='card'>
-                    <img className='work-item-image reflect right' src={e4s} alt='portfolio item'></img>
+                    <img className='work-item-image reflect right' src={amber_smith} alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
-                            E4S
+                            Amber Smith - Professional Nanny
                         </p>
                         <p className='work-description'>
-                            E4S is my personal Instagram. You won't find any library dependencies here. Made the old fashioned way. 
+                        Web-facing portal for professional nanny, Amber Smith.
+                        Matches families with care, based on their needs. Takes into account a 
+                        multitude of factors including salary and location requirements.
                         </p>
                         <p className='technologies-used-title'>
                             Technologies Used
                         </p>
                         <div className='tech-container'>
                             <p className='technologies-used-text'>
-                                HTML5   
+                                NodeJS   
                             </p>
                             <p className='technologies-used-text'>
-                                CSS3   
+                                Express  
                             </p>
                             <p className='technologies-used-text'>
-                                JavaScript   
+                                React  
                             </p>
                             <p className='technologies-used-text'>
-                                JQuery
+                                JavaScript
+                            </p>
+                            <p className='technologies-used-text'>
+                                MongoDB
+                            </p>
+                            <p className='technologies-used-text'>
+                                Mongoose
+                            </p>
+                            <p className='technologies-used-text'>
+                                HTML5/ CSS3
                             </p>
                         </div>
                         <div className='cta-container'>
-                            <div className='cta'><a href='https://spencej4.github.io/E_4S/' target="blank">Demo</a></div>
+                            <div className='cta'><a href='https://amber-smith.herokuapp.com/' target="blank">Demo</a></div>
                         </div>
                         <div className='cta-container'>
-                            <div className='cta'><a href='https://github.com/spencej4/E_4S' target="blank" className='github-repo'>Github</a></div>
+                            <div className='cta'><a href='https://github.com/spencej4/amber' target="blank" className='github-repo'>Github</a></div>
                         </div>
                     </div>
             </div>
