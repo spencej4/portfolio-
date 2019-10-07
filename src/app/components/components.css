@@ -1,11 +1,18 @@
-import 
-
 .body, html{
   margin:0;
   padding: 0;
   font-family: 'News Cycle', sans-serif !important;
   color: #242424;
   line-height: 1.5;
+}
+
+ /* here */
+.cover {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home{
@@ -16,7 +23,8 @@ import
   display: flex;
   justify-content: center;
   /* background-image: url("https://images.unsplash.com/photo-1533168461629-51f6f8061c68?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NTMwfQ"); */
-  background-image: url('../img/home-image.jpeg');
+  /* original */
+  /* background-image: url('../img/home-image.jpeg'); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
