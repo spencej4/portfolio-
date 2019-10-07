@@ -76,9 +76,7 @@
 }
 
 .work-item img {
-  /* original */
   max-width: 60%;
-  /* width: 60%; */
   height: auto; 
   display: inline-block;
   position: relative;

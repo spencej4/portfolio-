@@ -1,8 +1,6 @@
 import React from 'react'
 import './tech.css'
-import ProgressiveImage from "./progressiveImage";
 import  squixel from '../img/squixel.jpeg';
-import oxo_low from '../img/oxo-low.jpeg';
 import oxo from '../img/oxo.jpeg';
 import amber_smith from '../img/amber-smith.JPG';
 import celestial_battles from '../img/celestial-battles.JPG';
@@ -13,16 +11,7 @@ class Work extends React.Component{
       <div id="work" className="Portfolio">
         <div className='work-item'>
                 <div className='card'>
-                {/* <ProgressiveImage
-                        className={"work-item-image reflect"}
-                        alt={"portfolio item"}
-                        overlaySrc={oxo_low}
-                        src={oxo}
-                /> */}
-            {/* original img below */}
                 <img className='work-item-image reflect' src={oxo} alt='portfolio item'></img>
-
-
                 <div className='work-copy'>
                     <p className='work-title'>
                         OXO
