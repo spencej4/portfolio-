@@ -8,7 +8,6 @@
 
 .cover {
   width: 100%;
-  /* height: 450px; */
   position: absolute;
   transform: translate(-0%, -25%);
 }
@@ -189,6 +188,13 @@
     margin-left:-50px;
   }
 
+  .cover {
+    width: 230%;
+    height: auto;
+    position: absolute;
+    transform: translate(-0%, -12%);
+  }
+
   .home {
     margin-top: 0px;
     width: 100%;
@@ -197,10 +203,10 @@
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    background-image: url('../img/home-image.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    /* background-image: url('../img/home-image.jpeg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* background-size: cover; */
     z-index: 4;
   }
 }
