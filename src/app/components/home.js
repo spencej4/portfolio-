@@ -1,6 +1,6 @@
 import React from 'react'
 import './components.css';
-import ProgressiveImage from "./progressiveImage";
+// import ProgressiveImage from "./progressiveImage";
 const smoothScroll = require('smoothscroll')
 
 
@@ -11,7 +11,7 @@ class Home extends React.Component {
   render(){
     return (
       <div className="home" >
-        <ProgressiveImage
+        {/* <ProgressiveImage
             className={"cover"}
             alt={"a lake surrounded by tree-covered hills"}
             overlaySrc={
@@ -20,9 +20,9 @@ class Home extends React.Component {
             src={
               "../img/home-image.jpeg"
             }
-        />
+        /> */}
         {/* originally not commented out */}
-        {/* <div className="skew"></div> */}
+        <div className="skew"></div>
         <div className="home-text">
           <div className="hero-title"><p className='logo-font'>Spencer Jack</p></div>
           <p className="pop-pop">Developer. Problem Solver.</p>
