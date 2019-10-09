@@ -9,44 +9,51 @@ class Work extends React.Component{
   render(){
     return(
       <div id="work" className="Portfolio">
-        <div className='work-item'>
+       <div className='work-item'>
                 <div className='card'>
-                <img className='work-item-image reflect' src={oxo} alt='portfolio item'></img>
-                <div className='work-copy'>
-                    <p className='work-title'>
-                        OXO
-                    </p>
-                    <p className='work-description'>
-                        OXO is your dynamic gaming app, utilizing custom back-end database. Allowing users to create tournament brackets and participate in real-time game play,
-                        with scores and leaderboards.
-                    </p>
-                    <p className='technologies-used-title'>
-                        Technologies Used
-                    </p>
-                    <div className='tech-container'>
-                        <p className='technologies-used-text'>
-                            MongoDB   
+                    <img className='work-item-image reflect' src={squixel} alt='portfolio item'></img>
+                    <div className='work-copy'>
+                        <p className='work-title'>
+                            Squixel 
                         </p>
-                        <p className='technologies-used-text'>
-                            React  
+                        <p className='work-description'>
+                            Squixel is your new portal to professional grade, Instagram-worthy photographs. Search, and save your favorite
+                            photos to your own user database.
                         </p>
-                        <p className='technologies-used-text'>
-                            NodeJS  
+                        
+                        <p className='technologies-used-title'>
+                            Technologies Used
                         </p>
-                        <p className='technologies-used-text'>
-                            Express
-                        </p>
-                        <p className='technologies-used-text'>
-                            JavaScript
-                        </p>
+                        <div className='tech-container'>
+                            <p className='technologies-used-text'>
+                                NodeJS   
+                            </p>
+                            <p className='technologies-used-text'>
+                                Express  
+                            </p>
+                            <p className='technologies-used-text'>
+                                React  
+                            </p>
+                            <p className='technologies-used-text'>
+                                JavaScript
+                            </p>
+                            <p className='technologies-used-text'>
+                                MongoDB
+                            </p>
+                            <p className='technologies-used-text'>
+                                Mongoose
+                            </p>
+                            <p className='technologies-used-text'>
+                                HTML5/ CSS3
+                            </p>
+                        </div>
+                        <div className='cta-container'>
+                            <div className='cta'><a href='https://squixel.herokuapp.com/' target="blank">Demo</a></div>
+                        </div>
+                        <div className='cta-container'>
+                            <div className='cta'><a href='https://github.com/spencej4/squixel_3.0' target="blank" className='github-repo'>Github</a></div>
+                        </div>
                     </div>
-                    <div className='cta-container'>
-                        <div className='cta'><a href='https://guarded-retreat-45215.herokuapp.com/' target="blank">Demo</a></div>
-                    </div>
-                    <div className='cta-container'>
-                        <div className='cta'><a href='https://github.com/spencej4/OXO' target="blank" className='github-repo'>Github</a></div>
-                    </div>
-                </div>
                 </div>
         </div>
         <div className='work-item'>
@@ -98,52 +105,45 @@ class Work extends React.Component{
         </div>
         <div className='work-item'>
                 <div className='card'>
-                    <img className='work-item-image reflect' src={squixel} alt='portfolio item'></img>
-                    <div className='work-copy'>
-                        <p className='work-title'>
-                            Squixel 
+                <img className='work-item-image reflect' src={oxo} alt='portfolio item'></img>
+                <div className='work-copy'>
+                    <p className='work-title'>
+                        OXO
+                    </p>
+                    <p className='work-description'>
+                        OXO is your dynamic gaming app, utilizing custom back-end database. Allowing users to create tournament brackets and participate in real-time game play,
+                        with scores and leaderboards.
+                    </p>
+                    <p className='technologies-used-title'>
+                        Technologies Used
+                    </p>
+                    <div className='tech-container'>
+                        <p className='technologies-used-text'>
+                            MongoDB   
                         </p>
-                        <p className='work-description'>
-                            Squixel is your new portal to professional grade, Instagram-worthy photographs. Search, and save your favorite
-                            photos to your own user database.
+                        <p className='technologies-used-text'>
+                            React  
                         </p>
-                        
-                        <p className='technologies-used-title'>
-                            Technologies Used
+                        <p className='technologies-used-text'>
+                            NodeJS  
                         </p>
-                        <div className='tech-container'>
-                            <p className='technologies-used-text'>
-                                NodeJS   
-                            </p>
-                            <p className='technologies-used-text'>
-                                Express  
-                            </p>
-                            <p className='technologies-used-text'>
-                                React  
-                            </p>
-                            <p className='technologies-used-text'>
-                                JavaScript
-                            </p>
-                            <p className='technologies-used-text'>
-                                MongoDB
-                            </p>
-                            <p className='technologies-used-text'>
-                                Mongoose
-                            </p>
-                            <p className='technologies-used-text'>
-                                HTML5/ CSS3
-                            </p>
-                        </div>
-                        <div className='cta-container'>
-                            <div className='cta'><a href='https://squixel.herokuapp.com/' target="blank">Demo</a></div>
-                        </div>
-                        <div className='cta-container'>
-                            <div className='cta'><a href='https://github.com/spencej4/squixel_3.0' target="blank" className='github-repo'>Github</a></div>
-                        </div>
+                        <p className='technologies-used-text'>
+                            Express
+                        </p>
+                        <p className='technologies-used-text'>
+                            JavaScript
+                        </p>
+                    </div>
+                    <div className='cta-container'>
+                        <div className='cta'><a href='https://guarded-retreat-45215.herokuapp.com/' target="blank">Demo</a></div>
+                    </div>
+                    <div className='cta-container'>
+                        <div className='cta'><a href='https://github.com/spencej4/OXO' target="blank" className='github-repo'>Github</a></div>
                     </div>
                 </div>
-          </div>
-          <div className='work-item'>
+                </div>
+        </div>
+        <div className='work-item'>
                 <div className='card'>
                 <img className='work-item-image reflect right' src={celestial_battles} alt='portfolio item'></img>
                     <div className='work-copy '>

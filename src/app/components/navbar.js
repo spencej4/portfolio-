@@ -21,25 +21,44 @@ class Navbar extends React.Component{
     window.removeEventListener('scroll', this.handleScroll)
   }
   scrollTo = (where) =>{
-    let tech = document.getElementById('tech').offsetTop
-    let work = document.getElementById('work').offsetTop
-    let about = document.getElementById('about').offsetTop
-    let contact = document.getElementById('contact').offsetTop
+    if (this.state.mobileMenuRendered){
+      let tech = document.getElementById('tech').offsetTop 
+      let work = document.getElementById('work').offsetTop 
+      let about = document.getElementById('about').offsetTop 
+      let contact = document.getElementById('contact').offsetTop
 
+      switch(where){
+        case "tech":
+          return smoothScroll(tech)
+        case "work":
+          return smoothScroll(work)
+        case "about":
+          return smoothScroll(about)
+        case "contact":
+          return smoothScroll(contact)
+        default:
+          return console.log("ERROR");
+      }
+    }
+    else if (!this.state.mobileMenuRendered) {
+      let tech = document.getElementById('tech').offsetTop - 50;
+      let work = document.getElementById('work').offsetTop - 50;
+      let about = document.getElementById('about').offsetTop - 50
+      let contact = document.getElementById('contact').offsetTop - 50
     
-    switch(where){
-      // case "home":
-      // return smoothScroll(0)
-      case "tech":
-        return smoothScroll(tech)
-      case "work":
-        return smoothScroll(work)
-      case "about":
-        return smoothScroll(about)
-      case "contact":
-        return smoothScroll(contact)
-      default:
-        return console.log("ERROR");
+    
+      switch(where){
+        case "tech":
+          return smoothScroll(tech)
+        case "work":
+          return smoothScroll(work)
+        case "about":
+          return smoothScroll(about)
+        case "contact":
+          return smoothScroll(contact)
+        default:
+          return console.log("ERROR");
+      }
     }
   }
 
