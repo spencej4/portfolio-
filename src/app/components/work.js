@@ -1,7 +1,8 @@
 import React from 'react'
 import './tech.css'
 import  squixel from '../img/squixel.jpeg';
-import oxo from '../img/oxo.jpeg';
+import mendiola_farms from '../img/Mendiola-Farms.jpg';
+// import oxo from '../img/oxo.jpeg';
 import amber_smith from '../img/amber-smith.JPG';
 import celestial_battles from '../img/celestial-battles.JPG';
 
@@ -56,9 +57,57 @@ class Work extends React.Component{
                     </div>
                 </div>
         </div>
+
         <div className='work-item'>
                 <div className='card'>
-                    <img className='work-item-image reflect right' src={amber_smith} alt='portfolio item'></img>
+                <img className='work-item-image reflect right' src={mendiola_farms} alt='portfolio item'></img>
+                <div className='work-copy'>
+                    <p className='work-title'>
+                        Mendiola Farms - Bonsai
+                    </p>
+                    <p className='work-description'>
+                        Interactive storefront, displaying my ability to build a store, shopping cart, process shipping details and process payments. 
+                    </p>
+                    <p className='technologies-used-title'>
+                        Technologies Used
+                    </p>
+                    <div className='tech-container'>
+                        <p className='technologies-used-text'>
+                            MongoDB   
+                        </p>
+                        <p className='technologies-used-text'>
+                            React  
+                        </p>
+                        <p className='technologies-used-text'>
+                            NodeJS  
+                        </p>
+                        <p className='technologies-used-text'>
+                            Express
+                        </p>
+                        <p className='technologies-used-text'>
+                                Mongoose
+                        </p>
+                        <p className='technologies-used-text'>
+                            JavaScript
+                        </p>
+                        <p className='technologies-used-text'>
+                                HTML5/ CSS3
+                        </p>
+                    </div>
+                    <div className='cta-container'>
+                        <div className='cta'><a href='https://www.mendiolafarms.com' target="blank">Demo</a></div>
+                    </div>
+                    <div className='cta-container'>
+                        <div className='cta'><a href='https://github.com/spencej4/bonsai' target="blank" className='github-repo'>Github</a></div>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+
+        <div className='work-item'>
+                <div className='card'>
+                    <img className='work-item-image reflect' src={amber_smith} alt='portfolio item'></img>
                     <div className='work-copy '>
                         <p className='work-title'>
                             Amber Smith - Professional Nanny
@@ -103,7 +152,9 @@ class Work extends React.Component{
                     </div>
             </div>
         </div>
-        <div className='work-item'>
+    
+
+        {/* <div className='work-item'>
                 <div className='card'>
                 <img className='work-item-image reflect' src={oxo} alt='portfolio item'></img>
                 <div className='work-copy'>
@@ -142,7 +193,8 @@ class Work extends React.Component{
                     </div>
                 </div>
                 </div>
-        </div>
+        </div> */}
+        
         <div className='work-item'>
                 <div className='card'>
                 <img className='work-item-image reflect right' src={celestial_battles} alt='portfolio item'></img>
